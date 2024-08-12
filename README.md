@@ -1,6 +1,6 @@
 # BikcraftAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This project was first developed using HTML and CSS.
+Now this project was designed end wrote with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
 ## Development server
 
