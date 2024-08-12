@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./scss-config/style.colors.scss";
+@import "./scss-config/style.typography.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
