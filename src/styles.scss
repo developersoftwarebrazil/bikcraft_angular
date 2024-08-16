@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
+
 @import "./scss-config/style.colors.scss";
 @import "./scss-config/style.typography.scss";
 
@@ -6,11 +10,35 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-ul {
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
   margin: 0;
+}
+ul {
   padding: 0;
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
+img [src$='.jpg']{
+  border-radius: .25rem;//4px
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 1.25rem; // 20px
+  max-width: 75rem; // 1200px
+  margin-left: auto;
+  margin-right: auto;
+}
+//
