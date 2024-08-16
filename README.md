@@ -1,5 +1,5 @@
-# BikcraftAngular
-This project was first developed using HTML and CSS.
+# Bikcraf tAngular
+This project was first developed using HTML and CSS.<br>
 Now this project was designed end wrote with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
 ## Development server
