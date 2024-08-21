@@ -56,17 +56,16 @@
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
   }
-  .tecnologia-imagem img{
+  .tecnologia-imagem img {
     display: none;
   }
-  .tecnologia-conteudo .link{
-    background-color: red;
+  .tecnologia-conteudo .link {
     margin-bottom: 3.75rem;
   }
 }
 //600px
-@media(max-width: 37.5rem){
-  .tecnologia-vantagens{
+@media (max-width: 37.5rem) {
+  .tecnologia-vantagens {
     flex-direction: column;
   }
 }
