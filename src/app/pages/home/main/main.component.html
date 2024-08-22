@@ -1,16 +1,18 @@
 <main class="introducao-bg">
   <div class="introducao container">
     <div class="introducao-conteudo">
-      <h1 class="font-1-xxl">Bicicletas sob medida<span>.</span></h1>
-      <p class="font-2-l">
-        Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
-      </p>
+      <h1 class="font-1-xxl">
+        {{title}}<span>.</span></h1>
+      <p class="font-2-l">{{description}}</p>
 
-      <button-component label="Escolha a sua" class="btn btn-primary" route="/bicicletas">
+      <button-component
+      label="Escolha a sua"
+      class="btn btn-primary"
+      [route]="buttonRoute">
       </button-component>
     </div>
     <div>
-      <img src="../../../assets/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta.">
+      <img [src]="imageUrl" [alt]="imageAlt">
     </div>
   </div>
 </main>
