@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
-import { MainComponent } from './main/main.component';
 import { BicicletasListaComponent } from './bicicletas-lista/bicicletas-lista.component';
+import { MainComponent } from './main/main.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 
 @Component({

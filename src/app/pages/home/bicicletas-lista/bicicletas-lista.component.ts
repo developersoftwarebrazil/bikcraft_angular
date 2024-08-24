@@ -1,18 +1,60 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'bicicletas-lista',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+  ],
   templateUrl: './bicicletas-lista.component.html',
   styleUrl: './bicicletas-lista.component.scss'
 })
-export class BicicletasListaComponent {
-  constructor(private router: Router){}
 
-  goToBicicleta(){
+export class BicicletasListaComponent implements OnInit {
+
+  @Input() title: string = "escolha a sua";
+
+  bicicletas: Bicicleta[] = [
+
+    {
+      bicicletaNome: 'Magic Might',
+      bicicletaImagem: 'assets/img/bicicletas/magic-home.jpg',
+      bicicletaPreco: 'R$ 2499',
+      bicicletaAlt: 'bicicletas preta',
+    },
+    {
+      bicicletaNome: 'Nimbus Stark',
+      bicicletaImagem: 'assets/img/bicicletas/nimbus-home.jpg',
+      bicicletaPreco: 'R$ 4999',
+      bicicletaAlt: 'bicicletas cinza',
+    },
+    {
+      bicicletaNome: 'Nebula Cosmic',
+      bicicletaImagem: 'assets/img/bicicletas/nebula-home.jpg',
+      bicicletaPreco: 'R$ 3999',
+      bicicletaAlt: 'bicicletas cinza',
+    }
+  ];
+
+
+  constructor(private router: Router) { }
+
+  ngOnInit(): void { }
+
+
+  goToBicicleta(): void {
+
     this.router.navigate(['/bicicleta'])
   }
 
+
+
 }
+interface Bicicleta {
+  bicicletaNome: string;
+  bicicletaImagem: string;
+  bicicletaPreco: string;
+  bicicletaAlt: string;
+}
+
