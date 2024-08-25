@@ -1,6 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
+interface Bicicleta {
+  bicicletaNome: string;
+  bicicletaImagem: string;
+  bicicletaPreco: string;
+  bicicletaAlt: string;
+}
 @Component({
   selector: 'bicicletas-lista',
   standalone: true,
@@ -51,10 +58,5 @@ export class BicicletasListaComponent implements OnInit {
 
 
 }
-interface Bicicleta {
-  bicicletaNome: string;
-  bicicletaImagem: string;
-  bicicletaPreco: string;
-  bicicletaAlt: string;
-}
+
 

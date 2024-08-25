@@ -2,17 +2,14 @@
   <div class="introducao container">
     <div class="introducao-conteudo">
       <h1 class="font-1-xxl">
-        {{title}}<span>.</span></h1>
-      <p class="font-2-l">{{description}}</p>
+        {{mainTitle}}<span>.</span></h1>
+      <p class="font-2-l">{{mainDescription}}</p>
 
-      <button-component
-      label="Escolha a sua"
-      class="btn btn-primary"
-      [route]="buttonRoute">
+      <button-component label="Escolha a sua" class="btn btn-primary" [route]="buttonRoute">
       </button-component>
     </div>
     <div>
-      <img [src]="imageUrl" [alt]="imageAlt">
+      <img [src]="mainImageUrl" [alt]="mainImageAlt">
     </div>
   </div>
 </main>
