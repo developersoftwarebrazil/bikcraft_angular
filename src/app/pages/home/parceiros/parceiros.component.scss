@@ -34,8 +34,11 @@
     h2 {
       margin-bottom: 1.25rem; //20px
     }
-    ul{
+    ul {
       grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+      padding: 1.25rem; //20px
     }
     li:nth-child(n + 3) {
       border-top: 0.125rem solid var(--cor-2);

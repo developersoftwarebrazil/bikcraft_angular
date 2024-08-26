@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'depoimentos',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './depoimentos.component.html',
   styleUrl: './depoimentos.component.scss'
 })
-export class DepoimentosComponent {
+export class DepoimentosComponent implements OnInit {
+  @Input() depoimentoImageUrl: string="../../../../assets/img/fotos/depoimento.jpg";
+  @Input() depoimentoAltText: string="Pessoas pedalando uma bikcraft.";
+
+  constructor(){}
+  ngOnInit(): void { }
 
 }
