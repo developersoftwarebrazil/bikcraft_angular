@@ -1,0 +1,30 @@
+.parceiros {
+  padding-top: 3.75rem; // 60px
+  padding-bottom: 7.5rem; // 120px
+
+  h2 {
+    margin-bottom: 3.75rem; // 60px
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 87.5rem; //1400px
+    margin: 0 auto;
+    padding: 0 1.25rem; //
+  }
+  li {
+    display: flex;
+    padding: 2rem;
+    border-left: 0.125rem solid var(--cor-2);
+  }
+  li:first-child,
+  li:nth-child(5) {
+    border-left: none;
+  }
+  li:nth-child(n + 5) {
+    border-top: 0.125rem solid var(--cor-2);
+  }
+  img {
+    margin: auto;
+  }
+}

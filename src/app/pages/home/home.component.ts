@@ -3,6 +3,7 @@ import { HeadersComponent } from '../../components/shared/headers/headers.compon
 import { BicicletasListaComponent } from './bicicletas-lista/bicicletas-lista.component';
 import { MainComponent } from './main/main.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { ParceirosComponent } from './parceiros/parceiros.component';
 
 @Component({
   selector: 'home',
@@ -12,6 +13,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
     MainComponent,
     BicicletasListaComponent,
     TecnologiasComponent,
+    ParceirosComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
