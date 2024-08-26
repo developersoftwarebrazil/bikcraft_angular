@@ -27,4 +27,21 @@
   img {
     margin: auto;
   }
+
+  @media (max-width: 50rem) {
+    padding: 3.75rem; // 60px
+
+    h2 {
+      margin-bottom: 1.25rem; //20px
+    }
+    ul{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    li:nth-child(n + 3) {
+      border-top: 0.125rem solid var(--cor-2);
+    }
+    li:nth-child(odd) {
+      border-left: none;
+    }
+  }
 }
