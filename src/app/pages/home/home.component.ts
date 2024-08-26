@@ -4,6 +4,7 @@ import { BicicletasListaComponent } from './bicicletas-lista/bicicletas-lista.co
 import { MainComponent } from './main/main.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
+import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 
 @Component({
   selector: 'home',
@@ -14,6 +15,7 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
     BicicletasListaComponent,
     TecnologiasComponent,
     ParceirosComponent,
+    DepoimentosComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
