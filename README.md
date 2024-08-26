@@ -1,7 +1,8 @@
-# Bikcraf tAngular
-This project was first developed using HTML and CSS.<br>
-Now this project was designed end wrote with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+# Bikcraft Angular
+Este projeto foi inicialmente desenvolvido com HTML e CSS do curso de Html para iniciante.<br>
+Agora este projeto foi transcrito usando as boas práticas do angular [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.</br>
 
+Comandos Angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
