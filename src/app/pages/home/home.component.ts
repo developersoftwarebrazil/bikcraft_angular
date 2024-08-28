@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { DepoimentosComponent } from './depoimentos/depoimentos.component';
+import { SegurosComponent } from './seguros/seguros.component';
 
 @Component({
   selector: 'home',
@@ -16,6 +17,7 @@ import { DepoimentosComponent } from './depoimentos/depoimentos.component';
     TecnologiasComponent,
     ParceirosComponent,
     DepoimentosComponent,
+    SegurosComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
