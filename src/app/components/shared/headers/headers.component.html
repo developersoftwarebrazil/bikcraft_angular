@@ -1,15 +1,24 @@
 <header class="header-bg">
   <div class="header container">
     <div>
-      <a href=""><img src="../../../assets/bikcraft.svg" priority width="136" height="32" loading="eager" alt="bikcraft"> </a>
+      <a href=""><img [src]="marcaImgUrl" priority width="136" height="32" loading="eager" [alt]="marcarAtlText"> </a>
     </div>
 
-    <nav aria-label="primaria">
+
+    <nav-component [navItems]="[
+        { label: 'Bicicletas', link: 'bicicletas' },
+        { label: 'Seguros', link: 'seguros' },
+        { label: 'Contatos', link: 'contatos' },
+      ]" ariaLabel="primaria" ulClasses="nav-menu font-1-m cor-0">
+    </nav-component>
+
+
+    <!-- <nav aria-label="primaria">
       <ul class="header-menu font-1-m cor-0 ">
-        <li><a  href="bicicletas">Bicicletas</a></li>
-        <li><a  href="seguros">Seguros</a></li>
+        <li><a href="bicicletas">Bicicletas</a></li>
+        <li><a href="seguros">Seguros</a></li>
         <li><a href="contatos">Contatos</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </div>
 </header>

@@ -6,6 +6,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 import { SegurosComponent } from './seguros/seguros.component';
+import { FooterComponent } from '../../components/shared/footer/footer.component';
 
 @Component({
   selector: 'home',
@@ -18,6 +19,7 @@ import { SegurosComponent } from './seguros/seguros.component';
     ParceirosComponent,
     DepoimentosComponent,
     SegurosComponent,
+    FooterComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { LinksComponent } from '../../../components/shared/links/links.component';
+import { LinksComponent } from "../../../components/shared/links/links.component";
+
 
 interface Tecnologia {
   tecnlogiaListaImagemUrl: string;
@@ -13,8 +14,8 @@ interface Tecnologia {
   standalone: true,
   imports: [
     CommonModule,
-    LinksComponent,
-  ],
+    LinksComponent
+],
   templateUrl: './tecnologias.component.html',
   styleUrl: './tecnologias.component.scss'
 })
