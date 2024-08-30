@@ -1,1 +1,32 @@
-<p>footer works!</p>
+<footer class="footer-bg">
+  <div class="footer container">
+    <img [src]="marcaImgUrl" [alt]="marcarAtlText">
+    <div class="footer-contato">
+      <h3 class="font-2-l-b cor-0">{{contatoTitle}}</h3>
+      <ul class="font-2-m cor-5">
+        <li><a [href]="'tel:'+ numeroTelefone"> {{telefone}}</a></li>
+        <li><a [href]="'mailto:'+ enderecoEmail"> {{email}}</a></li>
+        <li>{{enderecoRua}}</li>
+        <li>{{enderecoBairro}}</li>
+        <li>{{enderecoCidade}}</li>
+      </ul>
+      <div class="footer-redes">
+        <a href="/"><img [src]="imgUrlInstagram" [alt]="instagramAltText"> </a>
+        <a href="/"><img [src]="imgUrlFace" [alt]="faceAltText"> </a>
+        <a href="/"><img [src]="imgUrlYoutube" [alt]="youtubeAltText"> </a>
+      </div>
+    </div>
+    <div class="footer-informacoes">
+      <h3 class="font-2-l-b cor-0">{{informacoesTitle}}</h3>
+      <nav-component [navItems]="[
+          { label: 'Bicicletas', link: 'bicicletas' },
+          { label: 'Seguros', link: 'seguros' },
+          { label: 'Contatos', link: 'contatos' },
+          { label: 'Termos e Condições', link: 'termos' }
+
+        ]" ariaLabel="primaria" ulClasses="nav-footer font-1-m cor-6">
+      </nav-component>
+    </div>
+    <p class="footer-copy font-2-m cor-6">{{copyright}}</p>
+  </div>
+</footer>
