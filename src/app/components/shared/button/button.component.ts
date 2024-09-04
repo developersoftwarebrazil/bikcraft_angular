@@ -34,6 +34,24 @@ import { Router } from '@angular/router';
     .botao.secundario:hover{
       background: var(--cor-9);
     }
+    .botao.seta{
+      display: flex;
+      align-items:center;
+    }
+    .botao.seta::after{
+      display:inline-block;
+      content:'';
+      width: 1.125rem; /* 18px */
+      height: 0.625rem; /* 10px */
+      margin-left: 0.75rem; /* 12px */
+      background: url("/assets/img/icones/seta.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: transform 0.2s;
+    }
+    .botao.seta:hover::after{
+      transform: translateX(.25rem);//4px
+    }
     @media (max-width: 37.5rem) { /* 600px */
       .botao {
         padding: 0.75rem 1rem; /* 12px 16px */
