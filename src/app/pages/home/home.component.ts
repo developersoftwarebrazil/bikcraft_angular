@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
-import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.component';
 import { HomeBicicletasListaComponent } from './home-bicicletas-lista/home-bicicletas-lista.component';
+import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.component';
 import { HomeMainComponent } from './home-main/home-main.component';
+import { HomeTecnologiasComponent } from './home-tecnologias/home-tecnologias.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { SegurosComponent } from './seguros/seguros.component';
-import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 
 @Component({
   selector: 'home',
@@ -16,7 +16,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
     HeadersComponent,
     HomeMainComponent,
     HomeBicicletasListaComponent,
-    TecnologiasComponent,
+    HomeTecnologiasComponent,
     ParceirosComponent,
     HomeDepoimentosComponent,
     SegurosComponent,

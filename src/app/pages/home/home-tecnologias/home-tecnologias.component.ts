@@ -10,16 +10,16 @@ interface Tecnologia {
   tecnlogiaListaImagedescricao: string;
 }
 @Component({
-  selector: 'tecnologias',
+  selector: 'home-tecnologias',
   standalone: true,
   imports: [
     CommonModule,
     LinksComponent
 ],
-  templateUrl: './tecnologias.component.html',
-  styleUrl: './tecnologias.component.scss'
+  templateUrl: './home-tecnologias.component.html',
+  styleUrl: './home-tecnologias.component.scss'
 })
-export class TecnologiasComponent implements OnInit {
+export class HomeTecnologiasComponent implements OnInit {
 
   @Input() tecnologiaSubtitle: string = 'Técnologias Avançada';
   @Input() tecnologiaTitle: string = 'você escolhe as suas cores e componentes';
