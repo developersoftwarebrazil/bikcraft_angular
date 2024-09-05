@@ -7,16 +7,16 @@ interface Seguros {
   segurosItem: string,
 }
 @Component({
-  selector: 'seguros',
+  selector: 'home-seguros',
   standalone: true,
   imports: [
     CommonModule,
     ButtonComponent,
   ],
-  templateUrl: './seguros.component.html',
-  styleUrl: './seguros.component.scss'
+  templateUrl: './home-seguros.component.html',
+  styleUrl: './home-seguros.component.scss'
 })
-export class SegurosComponent implements OnInit {
+export class HomeSegurosComponent implements OnInit {
   @Input() buttonRoute: string = '/orcamentos';
   @Input() titlePrata: string = 'Prata';
   @Input() periodoPrata: string = 'mensal';

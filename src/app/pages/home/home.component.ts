@@ -7,7 +7,7 @@ import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.compone
 import { HomeMainComponent } from './home-main/home-main.component';
 import { HomeTecnologiasComponent } from './home-tecnologias/home-tecnologias.component';
 import { HomeParceirosComponent } from './home-parceiros/home-parceiros.component';
-import { SegurosComponent } from './seguros/seguros.component';
+import { HomeSegurosComponent } from './home-seguros/home-seguros.component';
 
 @Component({
   selector: 'home',
@@ -19,7 +19,7 @@ import { SegurosComponent } from './seguros/seguros.component';
     HomeTecnologiasComponent,
     HomeParceirosComponent,
     HomeDepoimentosComponent,
-    SegurosComponent,
+    HomeSegurosComponent,
     FooterComponent,
   ],
   templateUrl: './home.component.html',
