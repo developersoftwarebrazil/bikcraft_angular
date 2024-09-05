@@ -4,7 +4,7 @@ import { FooterComponent } from '../../components/shared/footer/footer.component
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
 import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.component';
 import { HomeBicicletasListaComponent } from './home-bicicletas-lista/home-bicicletas-lista.component';
-import { MainComponent } from './main/main.component';
+import { HomeMainComponent } from './home-main/home-main.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { SegurosComponent } from './seguros/seguros.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
@@ -14,7 +14,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
   standalone: true,
   imports: [
     HeadersComponent,
-    MainComponent,
+    HomeMainComponent,
     HomeBicicletasListaComponent,
     TecnologiasComponent,
     ParceirosComponent,

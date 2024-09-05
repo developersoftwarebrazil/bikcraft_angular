@@ -8,10 +8,10 @@ import { ButtonComponent } from '../../../components/shared/button/button.compon
   imports: [
     ButtonComponent
   ],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+  templateUrl: './home-main.component.html',
+  styleUrl: './home-main.component.scss'
 })
-export class MainComponent {
+export class HomeMainComponent {
   @Input() mainTitle: string = ' Bicicletas sob medida';
   @Input() mainDescription: string = 'Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.';
   @Input() buttonRoute: string = '/bicicletas';
