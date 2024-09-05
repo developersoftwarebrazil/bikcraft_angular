@@ -7,13 +7,13 @@ interface Marcas{
 }
 
 @Component({
-  selector: 'parceiros',
+  selector: 'home-parceiros',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './parceiros.component.html',
-  styleUrl: './parceiros.component.scss'
+  templateUrl: './home-parceiros.component.html',
+  styleUrl: './home-parceiros.component.scss'
 })
-export class ParceirosComponent implements OnInit {
+export class HomeParceirosComponent implements OnInit {
 
   @Input() parceirosTitle:string='nossos parceiros';
   marcas: Marcas[]=[

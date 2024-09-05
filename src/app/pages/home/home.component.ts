@@ -6,7 +6,7 @@ import { HomeBicicletasListaComponent } from './home-bicicletas-lista/home-bicic
 import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.component';
 import { HomeMainComponent } from './home-main/home-main.component';
 import { HomeTecnologiasComponent } from './home-tecnologias/home-tecnologias.component';
-import { ParceirosComponent } from './parceiros/parceiros.component';
+import { HomeParceirosComponent } from './home-parceiros/home-parceiros.component';
 import { SegurosComponent } from './seguros/seguros.component';
 
 @Component({
@@ -17,7 +17,7 @@ import { SegurosComponent } from './seguros/seguros.component';
     HomeMainComponent,
     HomeBicicletasListaComponent,
     HomeTecnologiasComponent,
-    ParceirosComponent,
+    HomeParceirosComponent,
     HomeDepoimentosComponent,
     SegurosComponent,
     FooterComponent,
