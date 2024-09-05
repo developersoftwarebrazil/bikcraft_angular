@@ -9,16 +9,16 @@ interface Bicicleta {
   bicicletaAlt: string;
 }
 @Component({
-  selector: 'bicicletas-lista',
+  selector: 'home-bicicletas-lista',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: './bicicletas-lista.component.html',
-  styleUrl: './bicicletas-lista.component.scss'
+  templateUrl: './home-bicicletas-lista.component.html',
+  styleUrl: './home-bicicletas-lista.component.scss'
 })
 
-export class BicicletasListaComponent implements OnInit {
+export class HomeBicicletasListaComponent implements OnInit {
 
   @Input() title: string = "escolha a sua";
 

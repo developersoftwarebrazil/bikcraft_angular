@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
-import { BicicletasListaComponent } from './bicicletas-lista/bicicletas-lista.component';
 import { DepoimentosComponent } from './depoimentos/depoimentos.component';
+import { HomeBicicletasListaComponent } from './home-bicicletas-lista/home-bicicletas-lista.component';
 import { MainComponent } from './main/main.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { SegurosComponent } from './seguros/seguros.component';
@@ -15,7 +15,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
   imports: [
     HeadersComponent,
     MainComponent,
-    BicicletasListaComponent,
+    HomeBicicletasListaComponent,
     TecnologiasComponent,
     ParceirosComponent,
     DepoimentosComponent,
