@@ -19,10 +19,10 @@ interface Styles {
   styleUrl: './headers.component.scss',
 })
 export class HeadersComponent implements OnInit {
- 
+
   headerLinks = [
     { label: "Bicicletas", url: "/bicicleta" },
-    { label: "Seguros", url: "/seguro" },
+    { label: "Seguros", url: "/seguros" },
     { label: "Contatos", url: "/contato" },
   ]
 

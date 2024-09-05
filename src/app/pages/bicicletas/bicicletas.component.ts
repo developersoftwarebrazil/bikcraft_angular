@@ -89,7 +89,7 @@ export class BicicletasComponent implements OnInit {
   constructor(private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle('Bicicletas');
+    this.titleService.setTitle('Bicicletas | Bikcraft');
     this.metaService.addTags([
       { name: 'description', content: 'Página de bicicletas feitas artezanalmente.' },
       { name: 'keywords', content: 'Bicicletas' },

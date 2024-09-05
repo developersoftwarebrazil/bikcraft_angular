@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   constructor(private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle('Bicicletas - Bikcraft');
+    this.titleService.setTitle('Bicicletas | Bikcraft');
     this.metaService.addTags([
       { name: 'description', content: 'Descubra nossas bicicletas artesanais de alta qualidade.' },
       { name: 'keywords', content: 'bicicletas, artesanais, alta qualidade' },
