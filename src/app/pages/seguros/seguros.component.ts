@@ -4,6 +4,7 @@ import { HeadersComponent } from '../../components/shared/headers/headers.compon
 import { PageTitleComponent } from '../../components/shared/page-title/page-title.component';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { HomeSegurosComponent } from '../home/home-seguros/home-seguros.component';
 
 @Component({
   selector: 'seguros',
@@ -12,6 +13,7 @@ import { Meta, Title } from '@angular/platform-browser';
     CommonModule,
     HeadersComponent,
     PageTitleComponent,
+    HomeSegurosComponent,
     FooterComponent
   ],
   templateUrl: './seguros.component.html',
