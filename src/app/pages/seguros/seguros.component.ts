@@ -29,7 +29,32 @@ export class SegurosComponent {
     {
       vantagemIconeUrl: 'assets/img/icones/eletrica.svg',
       vantagensTitulo:'Reparo Elétrico',
-      vantagensDescricao: 'Reparo Elétrico'
+      vantagensDescricao: 'Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra.'
+    },
+    {
+      vantagemIconeUrl: 'assets/img/icones/rastreador.svg',
+      vantagensTitulo:'Recuperação',
+      vantagensDescricao: 'Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você.'
+    },
+    {
+      vantagemIconeUrl: 'assets/img/icones/ondas.svg',
+      vantagensTitulo:'Reparo de Quadro',
+      vantagensDescricao: 'Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar.'
+    },
+    {
+      vantagemIconeUrl: 'assets/img/icones/seguro.svg',
+      vantagensTitulo:'Segurança',
+      vantagensDescricao: 'O nosso seguro garante que todo reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft.'
+    },
+    {
+      vantagemIconeUrl: 'assets/img/icones/sustentavel.svg',
+      vantagensTitulo:'Sustentável',
+      vantagensDescricao: 'Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto.'
+    },
+    {
+      vantagemIconeUrl: 'assets/img/icones/velocidade.svg',
+      vantagensTitulo:'Rapidez',
+      vantagensDescricao: 'A sua Bikcraft ficará pronta para uso no mesmo dia, caso você traga ela para ser reparada em uma das filiais.'
     },
   ];
 

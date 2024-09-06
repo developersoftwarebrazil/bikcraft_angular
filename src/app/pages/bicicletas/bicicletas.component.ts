@@ -10,7 +10,6 @@ import { ButtonComponent } from '../../components/shared/button/button.component
 interface Bicicletas {
   iconeUrl: string,
   descricao: string,
-
 }
 @Component({
   selector: 'bicicletas',
