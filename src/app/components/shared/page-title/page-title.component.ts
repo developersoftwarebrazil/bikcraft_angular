@@ -9,8 +9,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './page-title.component.scss'
 })
 export class PageTitleComponent {
-  @Input() pageTitle: string = '';
-  @Input() pageSubtitle: string = '';
+  @Input() pageTitle!: string;
+  @Input() pageSubtitle!: string;
 
   @Input() titleClass: string = 'font-2-l-b cor-5'; // Classes CSS para <p>
   @Input() subtitleClass: string = 'font-1-xxl cor-0'; // Classes CSS para <h3>

@@ -18,11 +18,13 @@
     grid-template-columns: 1fr;
   }
 }
+
 .seguros-item {
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 2rem 2rem 2rem 3.75rem; //32px 32px 32ps 60px
   background: var(--cor-12);
+  border-radius: 0.25rem; //4px
 
   h3 {
     margin-bottom: 2.5rem; //40px
