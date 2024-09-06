@@ -1,7 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { Component, Input } from "@angular/core";
 
-export interface NavItem {
+interface NavItem {
   label: string;
   link: string;
   classes?: string; // Opicional para classes adicionais
@@ -17,7 +17,7 @@ export interface NavItem {
 })
 export class NavComponent {
   @Input() navItems: NavItem[] = [];
-  @Input() ariaLabel: string = '';
-  @Input() ulClasses: string = '';
+  @Input() ariaLabel!: string;
+  @Input() ulClasses!: string;
 
 }

@@ -9,7 +9,7 @@ import { NavComponent } from '../nav/nav.component';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent{
   @Input() marcaImgUrl: string = "assets/bikcraft.svg";
   @Input() marcarAtlText: string = "marca svg";
   @Input() contatoTitle: string = "Contato";
@@ -28,9 +28,5 @@ export class FooterComponent implements OnInit {
   @Input() youtubeAltText: string = "Instagram";
   @Input() informacoesTitle: string = "Informações";
   @Input() copyright: string = "Bikcraft @ Alguns direitos reservados.";
-
-
-  constructor() { }
-  ngOnInit(): void { }
 
 }

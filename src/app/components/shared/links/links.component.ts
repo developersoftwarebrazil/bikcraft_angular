@@ -36,9 +36,9 @@ import { Router } from '@angular/router';
 
 })
 export class LinksComponent {
-  @Input() label: string = "Link"
-  @Input() class: string = ""
-  @Input() route: string = "/"
+  @Input() label: string = "Link";
+  @Input() route!: string;
+  @Input() class!: string;
 
   constructor(private router: Router) { }
 

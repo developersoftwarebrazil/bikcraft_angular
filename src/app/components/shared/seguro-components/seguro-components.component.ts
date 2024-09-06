@@ -22,6 +22,5 @@ export class SeguroComponentsComponent {
   @Input() precoOuro!: string;
   @Input() periodoOuro!: string;
   @Input() segurosListaOuro!: { segurosItem: string }[];
-
   @Input() showTitle: boolean = true; // Controla a exibição do <h2>
 }

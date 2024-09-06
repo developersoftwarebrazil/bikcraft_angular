@@ -63,9 +63,9 @@ import { Router } from '@angular/router';
   imports: [CommonModule],
 })
 export class ButtonComponent {
-  @Input() label: string = 'Button';
-  @Input() class: string = '';
-  @Input() route: string = '/';
+  @Input() label!: string;
+  @Input() route!: string;
+  @Input() class!: string;
 
   constructor(private router: Router) { }
 
