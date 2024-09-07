@@ -4,6 +4,7 @@ import { HomeBicicletasListaComponent } from './pages/home/home-bicicletas-lista
 import { HomeComponent } from './pages/home/home.component';
 import { TermosComponent } from './pages/termos/termos.component';
 import { SegurosComponent } from './pages/seguros/seguros.component';
+import { ContatoComponent } from './pages/contato/contato.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,6 @@ export const routes: Routes = [
   { path: 'termos', component: TermosComponent },  // Adicione a rota para Termos
   { path: 'bicicletas', component: BicicletasComponent },
   { path: 'seguros', component: SegurosComponent },
-  // { path: 'contatos', component: ContatosComponent },
+  { path: 'contatos', component: ContatoComponent },
   // { path: '**', component: PageNotFoundComponent }  // Rota para páginas não encontradas
 ];

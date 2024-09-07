@@ -1,6 +1,7 @@
 @import "./scss-config/style.colors.scss";
 @import "./scss-config/style.typography.scss";
-@import"./scss-config/global.scss";
+@import "./scss-config/glabal.variables.scss";
+@import "./scss-config/global.scss";
 
 body {
   margin: 0;
@@ -25,17 +26,17 @@ a {
   color: inherit;
 }
 img {
-  max-width: 100%;
+  max-width: $full-width;
   display: block;
 }
 img [src$=".jpg"] {
-  border-radius: 0.25rem; //4px
+  border-radius: $border-radius-padrao; //4px
 }
 
 .container {
   box-sizing: border-box;
-  padding: 1.25rem; // 20px
-  max-width: 75rem; // 1200px
+  padding: $padding-medium; // 20px
+  max-width: $max-width; // 1200px
   margin-left: auto;
   margin-right: auto;
 }
