@@ -1,16 +1,15 @@
+@import "../../../../scss-config/glabal.variables.scss";
+
 .header-bg {
-  background: var(--cor-12);
+  background: $background-principal-preto-max;
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem; // 20px
+  gap: $gap-medium; // 20px
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-.header-nav-menu {
-  background: blue;
+  padding-top: $padding-top-medium; //20px
+  padding-bottom: $padding-bottom-medium; //20px;
 }
