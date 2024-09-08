@@ -16,7 +16,7 @@
   }
   //Responsive
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     grid-template-columns: 1fr;
   }
 }

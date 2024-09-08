@@ -4,9 +4,8 @@
   background-image: $background-gradient;
 
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     background: $background-principal-preto-med;
-
   }
 }
 .bicicletas {
@@ -17,7 +16,7 @@
   padding-bottom: $padding-bottom-big; //60px
 
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     grid-template-columns: 1fr;
     gap: $gap-medium; //20px
     margin-top: $margin-top-larger; //40px
@@ -80,7 +79,7 @@
     place-self: end;
   }
   //600px
-  @media (max-width: 37.5rem) {
+  @media (max-width: $medium-width) {
     grid-template-columns: 1fr;
 
     ul {
