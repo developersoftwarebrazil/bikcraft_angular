@@ -1,29 +1,27 @@
+@import "../../../scss-config/glabal.variables.scss";
+
 .bicicletas-bg {
-  background-image: linear-gradient(
-    to right,
-    var(--cor-0) 30%,
-    var(--cor-11) 0%
-  );
+  background-image: $background-gradient;
 
   //800px
   @media (max-width: 50rem) {
-    background: var(--cor-11);
+    background: $background-principal-preto-med;
 
   }
 }
 .bicicletas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem; //40px
-  padding-top: 3.75rem; //60px
-  padding-bottom: 3.75rem; //60px
+  gap: $gap-larger; //40px
+  padding-top: $padding-top-big; //60px
+  padding-bottom: $padding-bottom-big; //60px
 
   //800px
   @media (max-width: 50rem) {
     grid-template-columns: 1fr;
-    gap: 1.25rem; //20px
-    margin-top: 2.5rem; //40px
-    margin-bottom: 2.5rem; //440px
+    gap: $gap-medium; //20px
+    margin-top: $margin-top-larger; //40px
+    margin-bottom: $margin-bottom-larger; //40px
   }
 }
 .bicicletas-imagem {
@@ -35,9 +33,9 @@
     display: inline-block;
     grid-area: 1/1;
     place-self: start end;
-    margin-top: 1.25rem; //20px
+    margin-top: $margin-top-medium; //20px
     text-transform: uppercase;
-    background: var(--cor-12);
+    background: $background-principal-preto-max;
     padding: 0.5rem 1rem 0.5rem 0.5rem; //8px 16px 8px 8px
     border-radius: 0.125rem 0 0 0.125rem; //5px 0 0 5px
   }
@@ -52,31 +50,31 @@
     grid-column: 1/-1;
   }
   h2 {
-    margin-bottom: 0.125rem; //20px
+    margin-bottom: $margin-bottom-medium; //20px
   }
   h2::before {
     display: block;
     content: "";
-    width: 0.75rem; //12px
-    height: 0.5rem; //8px
-    background: var(--cor-p1);
-    margin-bottom: 0.5rem; //8px
+    width: $width-smaller; //12px
+    height: $height-smallest; //8px
+    background: $background-principal-amarelo-max;
+    margin-bottom: $margin-bottom-smallest; //8px
   }
   p {
-    margin-bottom: 2rem; //32px
+    margin-bottom: $margin-bottom-large; //32px
     max-width: 60ch;
   }
   ul {
     display: grid;
-    gap: 1rem; //16px
+    gap: $gap-small; //16px
   }
   li {
     display: flex;
     align-items: center;
   }
   img {
-    width: 1.5rem; //24px
-    margin-right: 0.5rem; //8px
+    width: $width-large; //24px
+    margin-right: $margin-right-smallest; //8px
   }
   .botao {
     place-self: end;
@@ -88,7 +86,7 @@
     ul {
       grid-template-columns: repeat(2, 1fr);
       font-size: 1rem; //16px
-      margin-bottom: 2rem; //32px
+      margin-bottom: $margin-bottom-large; //32px
     }
 
     .botao {
