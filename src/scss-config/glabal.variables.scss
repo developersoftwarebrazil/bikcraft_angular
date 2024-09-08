@@ -24,6 +24,7 @@ $larger-width: 50rem; //800px
 $medium-width: 37.5rem; //600px
 $min-width: 25rem; ///400px
 $smaller-width: 22.5rem; //360px
+$smallest-width: 17.5rem;//280px
 
 //width:
 $width-large: 1.5rem; //24px
@@ -47,7 +48,7 @@ $gap-large: 2rem; //32px
 $gap-medium: 1.25rem; //20px
 $gap-small: 1rem; //16px
 $gap-smaller: 0.75rem; //12px
-$gap-smallest: 0.5rem; //12px
+$gap-smallest: 0.5rem; //8px
 
 // Paddings todos os lados
 $padding-extra-big: 7.5rem; //120px
@@ -58,7 +59,7 @@ $padding-large: 2rem; //32px
 $padding-medium: 1.25rem; //20px
 $padding-small: 1rem; //16px
 $padding-smaller: 0.75rem; //12px
-$padding-smallest: 0.5rem; //12px
+$padding-smallest: 0.5rem; //8px
 
 //Padding top
 $padding-top-extra-big: 7.5rem; //120px
@@ -69,7 +70,7 @@ $padding-top-large: 2rem; //32px
 $padding-top-medium: 1.25rem; //20px
 $padding-top-small: 1rem; //16px
 $padding-top-smaller: 0.75rem; //12px
-$padding-top-smallest: 0.5rem; //12px
+$padding-top-smallest: 0.5rem; //8px
 
 //Padding bottom
 $padding-bottom-extra-big: 7.5rem; //120px
@@ -80,7 +81,7 @@ $padding-bottom-large: 2rem; //32px
 $padding-bottom-medium: 1.25rem; //20px
 $padding-bottom-small: 1rem; //16px
 $padding-bottom-smaller: 0.75rem; //12px
-$padding-bottom-smallest: 0.5rem; //12px
+$padding-bottom-smallest: 0.5rem; //8px
 
 //Padding right
 $padding-rigth-extra-big: 7.5rem; //120px
@@ -91,7 +92,7 @@ $padding-right-large: 2rem; //32px
 $padding-right-medium: 1.25rem; //20px
 $padding-right-small: 1rem; //16px
 $padding-right-smaller: 0.75rem; //12px
-$padding-right-smallest: 0.5rem; //12px
+$padding-right-smallest: 0.5rem; //8px
 
 //Padding left
 $padding-left-extra-big: 7.5rem; //120px
@@ -102,7 +103,7 @@ $padding-left-large: 2rem; //32px
 $padding-left-medium: 1.25rem; //20px
 $padding-left-small: 1rem; //16px
 $padding-left-smaller: 0.75rem; //12px
-$padding-left-smallest: 0.5rem; //12px
+$padding-left-smallest: 0.5rem; //8px
 
 //Margin todos os lados
 $margin-extra-big: 7.5rem; //120px
@@ -113,7 +114,7 @@ $margin-large: 2rem; //32px
 $margin-medium: 1.25rem; //20px
 $margin-small: 1rem; //16px
 $margin-smaller: 0.75rem; //12px
-$margin-smallest: 0.5rem; //12px
+$margin-smallest: 0.5rem; //8px
 
 //Marging top
 $margin-top-extra-big: 7.5rem; //120px
@@ -124,7 +125,7 @@ $margin-top-large: 2rem; //32px
 $margin-top-medium: 1.25rem; //20px
 $margin-top-small: 1rem; //16px
 $margin-top-smaller: 0.75rem; //12px
-$margin-top-smallest: 0.5rem; //12px
+$margin-top-smallest: 0.5rem; //8px
 
 //Margin botton
 $margin-bottom-extra-big: 7.5rem; //120px
@@ -135,7 +136,7 @@ $margin-bottom-large: 2rem; //32px
 $margin-bottom-medium: 1.25rem; //20px
 $margin-bottom-small: 1rem; //16px
 $margin-bottom-smaller: 0.75rem; //12px
-$margin-bottom-smallest: 0.5rem; //12px
+$margin-bottom-smallest: 0.5rem; //8px
 
 //Margin right
 $margin-right-extra-big: 7.5rem; //120px
@@ -146,7 +147,7 @@ $margin-right-large: 2rem; //32px
 $margin-right-medium: 1.25rem; //20px
 $margin-right-small: 1rem; //16px
 $margin-right-smaller: 0.75rem; //12px
-$margin-right-smallest: 0.5rem; //12px
+$margin-right-smallest: 0.5rem; //8px
 
 //Margin left
 $margin-left-extra-big: 7.5rem; //120px
@@ -157,7 +158,7 @@ $margin-left-large: 2rem; //32px
 $margin-left-medium: 1.25rem; //20px
 $margin-left-small: 1rem; //16px
 $margin-left-smaller: 0.75rem; //12px
-$margin-left-smallest: 0.5rem; //12px
+$margin-left-smallest: 0.5rem; //8px
 
 //border-radius
 $border-radius-padrao: 0.25rem; //4p
