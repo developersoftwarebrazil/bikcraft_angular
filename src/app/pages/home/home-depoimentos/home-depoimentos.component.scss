@@ -19,7 +19,7 @@
     text-align: center;
 
     img {
-      max-height: $height-bigger; //200px
+      max-height: $height-big; //200px
     }
   }
 }
@@ -32,7 +32,7 @@
     font-family: "Merriweather", serif;
     font-style: italic;
     font-weight: 900;
-    margin-bottom: $margin-bottom-large;//32px
+    margin-bottom: $margin-bottom-large; //32px
     position: relative;
   }
   p::before,
@@ -51,9 +51,8 @@
   }
   //Repsonsivo
   //800px
-  @media (max-width:$larger-width) {
+  @media (max-width: $larger-width) {
     padding: 2.5rem 1.25rem; //40px 20px
     justify-self: center;
   }
 }
-
