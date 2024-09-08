@@ -1,16 +1,18 @@
+@import "../../../scss-config/glabal.variables.scss";
+
 .termos {
-  padding-top: 5rem; //80px
-  padding-bottom: 5rem; //px
+  padding-top: $padding-top-bigger; //80px
+  padding-bottom: $padding-bottom-bigger; //80px
   h2 {
     font-weight: 600;
-    margin-bottom: 1.25rem; //20px
+    margin-bottom: $margin-bottom-medium; //20px
   }
   p {
     max-width: 75ch;
-    margin-bottom: 1.5rem; //24px
+    margin-bottom: $margin-bottom-extra-medium; //24px
   }
   p + h2{
-    margin-top: 2.5rem;//40px
+    margin-top: $margin-top-larger;//40px
   }
 }
 
