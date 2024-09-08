@@ -1,6 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { SeguroComponentsComponent } from '../../../components/shared/seguro-components/seguro-components.component';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { SeguroComponentsComponent } from "../../../components/shared/seguro-components/seguro-components.component";
 
 @Component({
   selector: 'home-seguros',
@@ -9,7 +9,7 @@ import { SeguroComponentsComponent } from '../../../components/shared/seguro-com
     CommonModule,
     SeguroComponentsComponent,
   ],
-  templateUrl: './home-seguros.component.html',
 
+  templateUrl: './home-seguros.component.html',
 })
 export class HomeSegurosComponent { }

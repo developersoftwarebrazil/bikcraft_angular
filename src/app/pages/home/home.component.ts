@@ -23,7 +23,7 @@ import { HomeSegurosComponent } from './home-seguros/home-seguros.component';
     FooterComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  
 })
 export class HomeComponent implements OnInit {
 
