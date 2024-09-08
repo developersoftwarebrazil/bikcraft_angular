@@ -1,0 +1,54 @@
+<headers></headers>
+<page-title [pageSubtitle]="'Escolha o seu seguro'" [pageTitle]="'você seguro'"></page-title>
+
+<seguro-components id="seguros" [titlePrata]="'Plano Prata'" [precoPrata]="'R$ 299'" [periodoPrata]="'mensal'" [segurosListaPrata]="[
+    {segurosItem: 'Duas trocas por ano'},
+    {
+      segurosItem: 'Assistência técnica',
+    },
+    {
+      segurosItem: 'Suporte das 08h às 18h',
+    },
+    {
+      segurosItem: 'Cobertura estadual',
+    },
+
+    ]" [titleOuro]="'Plano Ouro'" [precoOuro]="'R$ 399'" [periodoOuro]="'mensal'" [segurosListaOuro]="[
+
+    {
+      segurosItem: 'Cinco trocas por ano',
+    },
+    {
+      segurosItem: 'Assistência especial',
+    },
+    {
+      segurosItem: 'Suporte 24h',
+    },
+    {
+      segurosItem: 'Cobertura nacional',
+    },
+    {
+      segurosItem: 'Descontos em parceiros',
+    },
+    {
+      segurosItem: 'Acesso ao clube Bikcraft',
+    },
+
+  ]" [showTitle]="false">
+  >
+</seguro-components>
+
+<article class="vantagens-bg">
+  <div class="vantagens container">
+    <h2 class="font-1-xxl cor-0">vantagens<span class="cor-p1">.</span>
+    </h2>
+    <ul class="font-2-m cor-0">
+      <li *ngFor="let vantagensLista of vantagemLista">
+        <img [src]="vantagensLista.vantagemIconeUrl" alt="">
+        <h3 class="font-1-l cor-0">{{vantagensLista.vantagensTitulo}}</h3>
+        <p class="font-2-s cor-5">{{vantagensLista.vantagensDescricao}}</p>
+      </li>
+    </ul>
+  </div>
+</article>
+<footers></footers>

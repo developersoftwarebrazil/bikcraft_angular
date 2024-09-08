@@ -1,0 +1,34 @@
+@import "../../../../scss-config/glabal.variables.scss";
+.vantagens-bg {
+  background: $background-principal-amarelo-max;
+}
+.vantagens {
+  padding-top: $padding-top-extra-big; //120px
+  padding-bottom: $padding-bottom-exra-big; //120px
+
+  h2 {
+    margin-bottom: $margin-bottom-big; //60px
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, max-content));//280px
+    gap: 2.5rem 5rem; //40px 80px
+  }
+  h3,
+  img {
+    margin-bottom: $margin-smallest; //8px
+  }
+  //800px
+  @media (max-width: $larger-width) {
+    padding-top: $padding-top-big;//60px
+    padding-bottom: $padding-bottom-big;//60px
+
+    h2{
+      margin-bottom: $margin-bottom-larger;//40px
+    }
+    ul{
+      gap: $gap-medium;//20px
+    }
+
+  }
+}
