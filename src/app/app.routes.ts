@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { BicicletasComponent } from './pages/bicicletas/bicicletas.component';
 import { HomeBicicletasListaComponent } from './pages/home/home-bicicletas-lista/home-bicicletas-lista.component';
 import { HomeComponent } from './pages/home/home.component';
-import { SegurosComponent } from './pages/seguros/seguros.component';
 import { TermosComponent } from './pages/termos/termos.component';
+import { SegurosComponent } from './pages/seguros/seguros-components/seguros.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
