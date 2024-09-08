@@ -18,6 +18,7 @@ $background-gradient: linear-gradient(
 
 //LARGURAS E COMPRIMENTOS
 //screen
+//width
 $full-width: 100%;
 $max-width: 75rem; //1400px
 $larger-width: 50rem; //800px
@@ -25,6 +26,11 @@ $medium-width: 37.5rem; //600px
 $min-width: 25rem; ///400px
 $smaller-width: 22.5rem; //360px
 $smallest-width: 17.5rem;//280px
+
+//height
+$full-height: 100%;
+
+
 
 //width:
 $width-large: 1.5rem; //24px
@@ -34,6 +40,7 @@ $width-smaller: 0.75rem; //12px
 $width-smallest: 0.5rem; //8px
 
 //height
+$height-bigger:12.5rem;//200px
 $height-small: 1rem; //16px
 $height-smaller: 0.75rem; //12px
 $height-smallest: 0.5rem; //8px

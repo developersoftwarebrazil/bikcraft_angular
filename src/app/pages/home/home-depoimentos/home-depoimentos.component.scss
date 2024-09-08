@@ -1,23 +1,25 @@
+@import "../../../../scss-config/glabal.variables.scss";
+
 .depoimentos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: var(--cor-p1);
+  background: $background-principal-amarelo-max;
   overflow: hidden;
 
   img {
-    width: 100%;
-    height: 100%;
+    width: $full-width;
+    height: $full-height;
     object-fit: cover;
     border-radius: 0;
   }
   //Repsonsivo
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     grid-template-columns: 1fr;
     text-align: center;
 
     img {
-      max-height: 12.5rem; //200px
+      max-height: $height-bigger; //200px
     }
   }
 }
@@ -30,7 +32,7 @@
     font-family: "Merriweather", serif;
     font-style: italic;
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: $margin-bottom-large;//32px
     position: relative;
   }
   p::before,
@@ -49,9 +51,9 @@
   }
   //Repsonsivo
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width:$larger-width) {
     padding: 2.5rem 1.25rem; //40px 20px
     justify-self: center;
   }
 }
-//
+
