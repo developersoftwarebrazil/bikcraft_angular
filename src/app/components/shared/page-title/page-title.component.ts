@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './page-title.component.html',
-  styleUrl: './page-title.component.scss'
 })
 export class PageTitleComponent {
   @Input() pageTitle!: string;

@@ -13,7 +13,6 @@ interface NavItem {
   imports: [CommonModule],
 
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss',
 })
 export class NavComponent {
   @Input() navItems: NavItem[] = [];
