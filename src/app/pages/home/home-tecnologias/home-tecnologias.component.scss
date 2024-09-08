@@ -1,9 +1,11 @@
+@import"../../../../scss-config/glabal.variables.scss";
+
 .tecnologia-bg {
-  background: var(--cor-11);
+  background: $background-principal-preto-med;
   box-shadow: inset 0 5rem var(--cor-0), inset 0 -5rem var(--cor-0); //sombra com 80px
 
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     box-shadow: initial;
   }
 }
@@ -11,23 +13,23 @@
 .tecnologia {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem; //40px
+  gap: $gap-larger; //40px
 
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     grid-template-columns: 1fr;
   }
 }
 
 .tecnologia-imagem {
   img {
-    width: 100%;
-    height: 100%;
+    width: $full-width;
+    height: $full-height;
     object-fit: cover;
     object-position: left;
   }
   //800px
-  @media (max-width: 50rem) {
+  @media (max-width: $larger-width) {
     img {
       display: none;
     }
@@ -35,53 +37,53 @@
 }
 
 .tecnologia-conteudo {
-  padding-top: 5rem; //80px
-  padding-bottom: 5rem; //80px
+  padding-top: $padding-top-bigger; //80px
+  padding-bottom: $padding-bottom-bigger; //80px
 
   > span {
     display: block;
-    margin-bottom: 1.25rem; //20px
+    margin-bottom: $margin-bottom-medium; //20px
   }
 
   > h2 {
-    margin-bottom: 2rem; //32px
+    margin-bottom: $margin-bottom-large; //32px
   }
 
   > p {
-    margin-bottom: 1.25rem; //20px
+    margin-bottom: $margin-bottom-medium; //20px
   }
 
   .link {
     display: block;
-    margin-bottom: 5rem; //80px
+    margin-bottom: $margin-bottom-bigger; //80px
   }
 
   //800px
-  @media (max-width: 50rem) {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+  @media (max-width: $larger-width) {
+    padding-top: $padding-top-big;//60px
+    padding-bottom: $padding-bottom-big;//60px
   }
   .link {
-    margin-bottom: 3.75rem;
+    margin-bottom: $margin-bottom-big;//60px
   }
 }
 
 .tecnologia-vantagens {
   display: flex;
-  gap: 2.5rem; //40px
+  gap: $margin-top-larger; //40px
 
   h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: $margin-bottom-smallest;//8px
     width: max-content;
   }
 
   img {
-    width: 1.5rem; //24px
-    margin-bottom: 0.5rem;
+    width: $width-medium; //24px
+    margin-bottom: $margin-bottom-smallest;//9px
   }
 
   //600px
-  @media (max-width: 37.5rem) {
+  @media (max-width: $medium-width) {
     flex-direction: column;
   }
 }
