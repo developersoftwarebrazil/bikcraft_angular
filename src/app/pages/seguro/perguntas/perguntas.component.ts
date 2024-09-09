@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-perguntas',
+  selector: 'perguntas',
   standalone: true,
   imports: [],
   templateUrl: './perguntas.component.html',

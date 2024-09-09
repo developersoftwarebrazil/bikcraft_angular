@@ -1,6 +1,6 @@
 @import "../../../../scss-config/glabal.variables.scss";
 .vantagens-bg {
-  background: $background-principal-amarelo-max;
+  background: $background-principal-preto-max;
 }
 .vantagens {
   padding-top: $padding-top-extra-big; //120px
@@ -11,7 +11,10 @@
   }
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, max-content));//280px
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(17.5rem, max-content)
+    ); //280px
     gap: 2.5rem 5rem; //40px 80px
   }
   h3,
@@ -20,15 +23,14 @@
   }
   //800px
   @media (max-width: $larger-width) {
-    padding-top: $padding-top-big;//60px
-    padding-bottom: $padding-bottom-big;//60px
+    padding-top: $padding-top-big; //60px
+    padding-bottom: $padding-bottom-big; //60px
 
-    h2{
-      margin-bottom: $margin-bottom-larger;//40px
+    h2 {
+      margin-bottom: $margin-bottom-larger; //40px
     }
-    ul{
-      gap: $gap-medium;//20px
+    ul {
+      gap: $gap-medium; //20px
     }
-
   }
 }
