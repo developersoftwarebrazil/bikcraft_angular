@@ -16,6 +16,7 @@ interface VantagensLista{
   standalone: true,
   imports: [
     CommonModule,
+    PageTitleComponent,
     SeguroComponentsComponent,
   ],
   templateUrl: './seguros.component.html',
