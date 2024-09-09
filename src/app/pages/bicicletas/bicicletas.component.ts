@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { ButtonComponent } from '../../components/shared/button/button.component';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/page-title/page-title.component';
 import { FooterComponent } from './../../components/shared/footer/footer.component';
-import { ButtonComponent } from '../../components/shared/button/button.component';
+import { BicicletaNebulaComponent } from './bicicleta-nebula/bicicleta-nebula.component';
+import { Router } from '@angular/router';
 
 
 interface Bicicletas {
@@ -19,6 +21,7 @@ interface Bicicletas {
     HeadersComponent,
     PageTitleComponent,
     ButtonComponent,
+    BicicletaNebulaComponent,
     FooterComponent,
   ],
   templateUrl: './bicicletas.component.html',
@@ -32,10 +35,11 @@ export class BicicletasComponent implements OnInit {
   @Input() altText2: string = 'bicicleta cinza';
   @Input() imgBicicleta3Url: string = 'assets/img/bicicletas/nebula.jpg';
   @Input() altText3: string = 'bicicleta preta';
-  @Input() buttonRoute1: string = '/bicicletas/nimbus';
-  @Input() buttonRoute2: string = '/bicicletas/magic';
-  @Input() buttonRoute3: string = '/bicicletas/nebula';
 
+  // Rotas para os botões de navegação
+  @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
+  @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
+  @Input() buttonRoute3: string = 'bicicletas/bicicleta-nebula';
 
   bicicletas1: Bicicletas[] = [
     {
@@ -85,7 +89,11 @@ export class BicicletasComponent implements OnInit {
       descricao: 'Rastreador'
     },
   ]
-  constructor(private titleService: Title, private metaService: Meta) { }
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.titleService.setTitle('Bicicletas | Bikcraft');
@@ -96,6 +104,20 @@ export class BicicletasComponent implements OnInit {
       { property: 'og:desscription', content: 'Página de bicicletas feitas artezanalmente.' },
       { property: 'og:type', content: 'website' },
     ])
+  }
+
+
+  // Métodos de navegação programática
+  navigateToNimbus() {
+    this.router.navigate([this.buttonRoute1]);
+  }
+
+  navigateToMagic() {
+    this.router.navigate([this.buttonRoute2]);
+  }
+
+  navigateToNebula() {
+    this.router.navigate([this.buttonRoute3]);
   }
 
 }
