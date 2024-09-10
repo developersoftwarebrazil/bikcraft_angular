@@ -1,5 +1,116 @@
 @import "../../../../scss-config/glabal.variables.scss";
+
 .bicicleta-bg {
   background: $background-principal-preto-med;
 }
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: $gap-larger; //40px
+  padding-top: $padding-top-big; //60px
+  padding-bottom: $padding-bottom-big; //60px
+
+  //800px
+  @media (max-width: $larger-width) {
+    grid-template-columns: 1fr;
+    padding-bottom: $padding-bottom-larger; //40px
+    padding-top: $padding-top-larger; //40px}
+    .titulo .titulo-bicicleta {
+      background: red;
+    }
+  }
+}
+.bicicletas-imagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-larger; //40px
+
+  img {
+    flex: 1;
+    min-width: $width-big; //200px
+  }
+  img:first-child {
+    min-width: $full-width; //100%
+  }
+  //800px
+  @media (max-width: $larger-width) {
+    grid-row: 2;
+  }
+}
+.bicicleta-conteudo {
+  > p {
+    margin-bottom: $margin-large; //20px
+  }
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: $margin-bottom-smaller; //12px
+  }
+}
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 0.5rem 0.75rem; //8px 12px
+  margin-bottom: $margin-bottom-larger; //40px
+
+  .botao {
+    grid-row: span 2;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    background: $background-principal-preto-max;
+    padding: 0.25rem 0.5rem; //4px 8px
+    gap: $gap-smallest; //8px
+    border-radius: $border-radius-padrao;
+  }
+  //400px
+  @media (max-width: $min-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bicicleta-informacoes,
+.bicicleta-ficha {
+  padding: $padding-large; //32px
+  background: $background-principal-preto-max;
+  border-radius: $border-radius-padrao; //4px
+}
+.bicicleta-informacoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap-large; //32px
+  margin-bottom: $margin-bottom-larger; //40px
+
+  img {
+    max-width: $width-large; //24px
+    margin-bottom: $margin-bottom-smallest; //8px
+  }
+  h3 {
+    margin-bottom: $margin-bottom-smallest; //8px
+  }
+  //400px
+  @media (max-width: $min-width) {
+    grid-template-columns: 1fr;
+  }
+}
+.bicicleta-ficha {
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0; //40px 0
+    border-bottom: 0.125rem solid var(--cor-11);
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  span {
+    color: var(--cor-6);
+  }
+}
+
 //

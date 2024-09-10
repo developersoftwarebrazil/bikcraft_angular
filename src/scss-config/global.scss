@@ -88,11 +88,16 @@
   }
   //800px
   @media (max-width: 50rem) {
-    p{
+    p {
       font-size: 1rem;
       font-weight: 400;
       text-transform: lowercase;
-
+    }
+  }
+  .titulo-bicicleta {
+    //800px
+    @media (max-width: 50rem) {
+      text-transform: uppercase;
     }
   }
 }
@@ -101,6 +106,5 @@
 #seguros .seguros {
   padding-top: 0;
 }
-
 
 //
