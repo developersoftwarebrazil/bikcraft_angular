@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-bicicletas-lista',
+  selector: 'bicicletas-lista',
   standalone: true,
   imports: [
     CommonModule
@@ -26,11 +27,12 @@ import { Component, Input } from '@angular/core';
 export class BicicletasListaComponent {
 
   @Input() title!: string;
-  @Input() bicicletas!: { bicicletaNome: string, bicicletaImagem: string, bicicletaPreco: string }[];
+  @Input() bicicletas!: { bicicletaNome: string, bicicletaImagem: string, bicicletaPreco: string, id: number }[];
+
+  constructor(private router: Router) { }
 
   goToBicicleta(bicicleta: any) {
-    console.log('Bicicleta selecionada:', bicicleta);
-    // Lógica de navegação ou ação quando clicar em uma bicicleta
+    this.router.navigate(['/bicicletas', bicicleta.id])
   }
 
 }

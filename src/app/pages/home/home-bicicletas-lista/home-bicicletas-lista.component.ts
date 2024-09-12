@@ -1,60 +1,56 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 
-interface Bicicleta {
-  bicicletaNome: string;
-  bicicletaImagem: string;
-  bicicletaPreco: string;
-  bicicletaAlt: string;
-}
 @Component({
   selector: 'home-bicicletas-lista',
   standalone: true,
   imports: [
     CommonModule,
+    BicicletasListaComponent,
   ],
   templateUrl: './home-bicicletas-lista.component.html',
-  styleUrl: './home-bicicletas-lista.component.scss'
+  
 })
 
 export class HomeBicicletasListaComponent implements OnInit {
 
-  @Input() title: string = "escolha a sua";
+  bicicletaId!: number;
 
-  bicicletas: Bicicleta[] = [
-
+  bicicletasLista = [
     {
+      id: 1,
       bicicletaNome: 'Magic Might',
       bicicletaImagem: 'assets/img/bicicletas/magic-home.jpg',
       bicicletaPreco: 'R$ 2499',
       bicicletaAlt: 'bicicletas preta',
     },
     {
+      id: 2,
       bicicletaNome: 'Nimbus Stark',
       bicicletaImagem: 'assets/img/bicicletas/nimbus-home.jpg',
       bicicletaPreco: 'R$ 4999',
       bicicletaAlt: 'bicicletas cinza',
     },
     {
+      id: 3,
       bicicletaNome: 'Nebula Cosmic',
       bicicletaImagem: 'assets/img/bicicletas/nebula-home.jpg',
       bicicletaPreco: 'R$ 3999',
       bicicletaAlt: 'bicicletas cinza',
     }
-  ];
+  ]
 
 
-  constructor(private router: Router) { }
+  constructor(private router: ActivatedRoute) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.router.params.subscribe(params => {
+      this.bicicletaId = +params['id'];
+    })
 
-
-  goToBicicleta(): void {
-
-    this.router.navigate(['/bicicleta'])
   }
-
 
 
 }
