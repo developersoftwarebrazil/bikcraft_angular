@@ -31,17 +31,17 @@ interface BicicletasFicha {
 })
 export class BicicletaNimbusComponent {
   // imagens bicicletas
-  @Input() nimbus1: string = "../../../../assets/img/bicicleta/nimbus1.jpg";
+  @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
   @Input() altImgText1: string = "bicicleta preta";
-  @Input() nimbus2: string = "../../../../assets/img/bicicleta/nimbus2.jpg";
+  @Input() nimbus2: string = "assets/img/bicicleta/nimbus2.jpg";
   @Input() altImgText2: string = "bicicleta cinza";
-  @Input() nimbus3: string = "../../../../assets/img/bicicleta/nimbus3.jpg";
+  @Input() nimbus3: string = "assets/img/bicicleta/nimbus3.jpg";
   @Input() altImgText3: string = "bicicleta branca";
 
   // imagens icones
-  @Input() iconUrl1: string = "../../../../assets/img/icones/entrega.svg";
+  @Input() iconUrl1: string = "assets/img/icones/entrega.svg";
   @Input() altImgIcon1: string = "imagem icone moto de entrega";
-  @Input() iconUrl2: string = "../../../../assets/img/icones/estoque.svg";
+  @Input() iconUrl2: string = "assets/img/icones/estoque.svg";
   @Input() altImgIcon2: string = "imagem icone moto de estoque";
 
 
@@ -55,22 +55,22 @@ export class BicicletaNimbusComponent {
 
   bicicletasinformacoes: BicicletasInformacoes[] = [
     {
-      iconUrl: '../../../../assets/img/icones/eletrica.svg',
+      iconUrl: 'assets/img/icones/eletrica.svg',
       iconTitulo: 'Motor Elétrico',
       descricao: 'Permite você viajar distâncias inimaginaveis com a sua bike.'
     },
     {
-      iconUrl: '../../../../assets/img/icones/velocidade.svg',
+      iconUrl: 'assets/img/icones/velocidade.svg',
       iconTitulo: '50 km/h',
       descricao: 'A mais rápida bicicleta elétrica disponível hoje no mercado.'
     },
     {
-      iconUrl: '../../../../assets/img/icones/rastreador.svg',
+      iconUrl: 'assets/img/icones/rastreador.svg',
       iconTitulo: 'Rastreador',
       descricao: 'Rastreador e sistema anti-furto para garantir o seu sossego.'
     },
     {
-      iconUrl: '../../../../assets/img/icones/carbono.svg',
+      iconUrl: 'assets/img/icones/carbono.svg',
       iconTitulo: 'Fibra de Carbono',
       descricao: 'Maior proteção possível para a sua Bikcraft com fibra de carbono.'
     },

@@ -1,18 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { ButtonComponent } from '../../components/shared/button/button.component';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/page-title/page-title.component';
 import { FooterComponent } from './../../components/shared/footer/footer.component';
 import { BicicletaNebulaComponent } from './bicicleta-nebula/bicicleta-nebula.component';
-import { Router } from '@angular/router';
 
 
-interface Bicicletas {
-  iconeUrl: string,
-  descricao: string,
-}
 @Component({
   selector: 'bicicletas',
   standalone: true,
@@ -41,7 +37,7 @@ export class BicicletasComponent implements OnInit {
   @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
   @Input() buttonRoute3: string = 'bicicletas/bicicleta-nebula';
 
-  bicicletas1: Bicicletas[] = [
+  bicicletas1 = [
     {
       iconeUrl: 'assets/img/icones/eletrica.svg',
       descricao: 'Motor Elétrico'
@@ -57,7 +53,7 @@ export class BicicletasComponent implements OnInit {
       descricao: 'Rastreador'
     },
   ];
-  bicicletas2: Bicicletas[] = [
+  bicicletas2 = [
     {
       iconeUrl: 'assets/img/icones/eletrica.svg',
       descricao: 'Motor Elétrico'
@@ -73,7 +69,7 @@ export class BicicletasComponent implements OnInit {
       descricao: 'Rastreador'
     },
   ];
-  bicicletas3: Bicicletas[] = [
+  bicicletas3 = [
     {
       iconeUrl: 'assets/img/icones/eletrica.svg',
       descricao: 'Motor Elétrico'
