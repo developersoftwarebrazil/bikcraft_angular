@@ -5,6 +5,8 @@ import { ButtonComponent } from '../../../components/shared/button/button.compon
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
+import { BicicletasComponent } from "../bicicletas.component";
 
 interface BicicletasInformacoes {
   iconUrl: string,
@@ -24,8 +26,10 @@ interface BicicletasFicha {
     PageTitleComponent,
     ButtonComponent,
     BicicletasListaComponent,
+    BicicletaSeguroComponent,
     FooterComponent,
-  ],
+    BicicletasComponent
+],
   templateUrl: './bicicleta-nimbus.component.html',
   styleUrl: './bicicleta-nimbus.component.scss'
 })

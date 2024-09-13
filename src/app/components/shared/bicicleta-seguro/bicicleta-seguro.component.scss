@@ -1,0 +1,47 @@
+@import "../../../../scss-config/glabal.variables.scss";
+
+.seguro-bg {
+  background: $background-principal-preto-med;
+  box-shadow: inset 0 7.5rem var(--cor-0), inset 0 -7.5rem var(--cor-12);
+
+  //800px
+  @media (max-width: $larger-width) {
+    box-shadow:inset 0 -3.75rem var(--cor-12);
+
+  }
+}
+.seguro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap-larger; // 40px
+
+  img {
+    width: $full-width; //100%
+    height: $full-height; //100%
+    object-fit: cover;
+  }
+  h2{
+    margin-bottom: $margin-bottom-large;// 32px
+  }
+  p{
+    margin-bottom: $margin-bottom-medium;// 20px
+  }
+
+  //800px
+  @media (max-width: $larger-width) {
+    grid-template-columns: 1fr;
+
+  }
+}
+.seguro-conteudo{
+  padding-top: $padding-top-extra-biggest;
+  padding-bottom: $padding-bottom-extra-biggest;
+
+  //800px
+  @media (max-width: $larger-width) {
+    grid-row: 1;
+    padding-top: $padding-top-medium;//40px
+    padding-bottom: 0;
+  }
+}
+//

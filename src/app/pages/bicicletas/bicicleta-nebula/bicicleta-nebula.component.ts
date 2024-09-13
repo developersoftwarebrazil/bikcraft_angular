@@ -5,6 +5,7 @@ import { ButtonComponent } from '../../../components/shared/button/button.compon
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 
 @Component({
   selector: 'app-bicicleta-nebula',
@@ -15,6 +16,7 @@ import { PageTitleComponent } from '../../../components/shared/page-title/page-t
     PageTitleComponent,
     ButtonComponent,
     BicicletasListaComponent,
+    BicicletaSeguroComponent,
     FooterComponent,
   ],
   templateUrl: './bicicleta-nebula.component.html',

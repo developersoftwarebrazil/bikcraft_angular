@@ -1,1 +1,13 @@
-<p>bicicleta-seguro works!</p>
+<article class="seguro-bg">
+  <div class="seguro container">
+    <div class="seguro-imagem">
+      <img [src]="imagemSeguroBicicletaUrl" [alt]="imagemSeguroBicicletaAltText">
+    </div>
+    <div class="seguro-conteudo">
+      <h2 class="font-1-xxl cor-0">{{tituloBicicleta}} <span class="cor-p1">seguro.</span></h2>
+      <p class="font-2-l cor-5">{{textoBicicleta}}</p>
+
+      <button-component [label]="'Conheça Mais'"  [route]="'seguros/seguro'" ></button-component>
+    </div>
+  </div>
+</article>
