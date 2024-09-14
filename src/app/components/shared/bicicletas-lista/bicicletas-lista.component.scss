@@ -21,6 +21,7 @@
   li {
     flex: 1;
     min-width: $smallest-width; // 280px
+    cursor: pointer;
   }
 
   a {
@@ -43,16 +44,16 @@
     &::before {
       content: "";
       display: inline-block;
-      height: $height-smallest;//8px
-      width: $width-smaller;//12px
-      margin-right: $margin-right-smallest;//8px
+      height: $height-smallest; //8px
+      width: $width-smaller; //12px
+      margin-right: $margin-right-smallest; //8px
       background: $background-principal-amarelo-max;
       transition: width 0.2s;
     }
   }
 
   li span {
-    padding-left: $padding-left-small;//20px
+    padding-left: $padding-left-small; //20px
   }
 
   // Responsividade para telas menores
