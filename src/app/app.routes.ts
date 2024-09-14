@@ -1,18 +1,20 @@
+
 import { Routes } from '@angular/router';
-import { BicicletasComponent } from './pages/bicicletas/bicicletas.component';
+import { BicicletaMagicComponent } from './pages/bicicleta/bicicleta-magic/bicicleta-magic.component';
+import { BicicletaNebulaComponent } from './pages/bicicleta/bicicleta-nebula/bicicleta-nebula.component';
+import { BicicletaNimbusComponent } from './pages/bicicleta/bicicleta-nimbus/bicicleta-nimbus.component';
+import { BicicletasComponent } from './pages/bicicleta/bicicletas.component';
 import { HomeBicicletasListaComponent } from './pages/home/home-bicicletas-lista/home-bicicletas-lista.component';
 import { HomeComponent } from './pages/home/home.component';
-
-import { BicicletaMagicComponent } from './pages/bicicletas/bicicleta-magic/bicicleta-magic.component';
-import { BicicletaNebulaComponent } from './pages/bicicletas/bicicleta-nebula/bicicleta-nebula.component';
-import { BicicletaNimbusComponent } from './pages/bicicletas/bicicleta-nimbus/bicicleta-nimbus.component';
 import { SeguroComponent } from './pages/seguro/seguro.component';
-import { TermosComponent } from './pages/termos/termos.component';
+import { TermosComponent } from './pages/termo/termos.component';
+import { ContatoComponent } from './pages/contato/contato.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: "home", component: HomeComponent },
   { path: 'homebicicletasLista', component: HomeBicicletasListaComponent },
+  { path: 'contato', component: ContatoComponent },
   { path: 'termos', component: TermosComponent },  // Adicione a rota para Termos
   { path: 'seguros', component: SeguroComponent },
   { path: 'bicicletas', component: BicicletasComponent },
@@ -23,6 +25,5 @@ export const routes: Routes = [
   { path: 'bicicletas/bicicleta-nebula', component: BicicletaNebulaComponent },
   { path: '**', redirectTo: '/bicicletas' }, // Redireciona para "Bicicletas" caso a rota não exista
 
-  // { path: 'contatos', component: ContatoComponent },
   // { path: '**', component: PageNotFoundComponent }  // Rota para páginas não encontradas
 ];
