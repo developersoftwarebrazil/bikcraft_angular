@@ -11,7 +11,7 @@ import { BicicletasListaComponent } from '../../../components/shared/bicicletas-
     BicicletasListaComponent,
   ],
   templateUrl: './home-bicicletas-lista.component.html',
-  
+
 })
 
 export class HomeBicicletasListaComponent implements OnInit {
@@ -20,14 +20,16 @@ export class HomeBicicletasListaComponent implements OnInit {
 
   bicicletasLista = [
     {
-      id: 1,
+      id: 2,
+      link: 'bicicletas',
       bicicletaNome: 'Magic Might',
       bicicletaImagem: 'assets/img/bicicletas/magic-home.jpg',
       bicicletaPreco: 'R$ 2499',
       bicicletaAlt: 'bicicletas preta',
     },
     {
-      id: 2,
+      id: 1,
+      link: 'bicicletas',
       bicicletaNome: 'Nimbus Stark',
       bicicletaImagem: 'assets/img/bicicletas/nimbus-home.jpg',
       bicicletaPreco: 'R$ 4999',
@@ -35,6 +37,7 @@ export class HomeBicicletasListaComponent implements OnInit {
     },
     {
       id: 3,
+      link: 'bicicletas',
       bicicletaNome: 'Nebula Cosmic',
       bicicletaImagem: 'assets/img/bicicletas/nebula-home.jpg',
       bicicletaPreco: 'R$ 3999',

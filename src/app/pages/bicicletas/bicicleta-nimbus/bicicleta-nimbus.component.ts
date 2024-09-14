@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
-import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasComponent } from "../bicicletas.component";
 
 interface BicicletasInformacoes {
@@ -29,7 +29,7 @@ interface BicicletasFicha {
     BicicletaSeguroComponent,
     FooterComponent,
     BicicletasComponent
-],
+  ],
   templateUrl: './bicicleta-nimbus.component.html',
   styleUrl: './bicicleta-nimbus.component.scss'
 })
@@ -51,10 +51,10 @@ export class BicicletaNimbusComponent {
 
   @Input() buttonRoute: string = 'bicicletas/orcamento';
 
-   // Rotas para os botões de navegação
-   @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
-   @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
-   @Input() buttonRoute3: string = 'bicicletas/bicicleta-nebula';
+  // Rotas para os botões de navegação
+  @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
+  @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
+  @Input() buttonRoute3: string = 'bicicletas/bicicleta-nebula';
 
 
   bicicletasinformacoes: BicicletasInformacoes[] = [
@@ -109,6 +109,7 @@ export class BicicletaNimbusComponent {
   bicicletasLista = [
     {
       id: 2,
+      link: 'bicicletas/bicicleta-magic',
       bicicletaNome: 'Magic Might',
       bicicletaImagem: 'assets/img/bicicletas/magic.jpg',
       bicicletaPreco: 'R$ 2499',
@@ -116,6 +117,7 @@ export class BicicletaNimbusComponent {
     },
     {
       id: 3,
+      link: 'bicicletas/bicicleta-nebula',
       bicicletaNome: 'Nebula Cosmic',
       bicicletaImagem: 'assets/img/bicicletas/nebula.jpg',
       bicicletaPreco: 'R$ 3999',

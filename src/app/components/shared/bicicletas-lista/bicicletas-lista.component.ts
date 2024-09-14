@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   <h2 class="container font-1-xxl">{{ title }}<span class="cor-p1">.</span></h2>
       <ul>
         <li *ngFor="let bicicleta of bicicletas">
-          <a (click)="goToBicicleta(bicicleta)">
+          <a (click)="goToBicicleta(bicicleta.link)">
             <img [src]="bicicleta.bicicletaImagem" [alt]="'bicicleta ' + bicicleta.bicicletaNome">
             <h3 class="font-1-xl">{{ bicicleta.bicicletaNome }}</h3>
             <span class="font-2-m cor-8">{{ bicicleta.bicicletaPreco }}</span>
@@ -27,12 +27,12 @@ import { Router } from '@angular/router';
 export class BicicletasListaComponent {
 
   @Input() title!: string;
-  @Input() bicicletas!: { bicicletaNome: string, bicicletaImagem: string, bicicletaPreco: string, id: number }[];
+  @Input() bicicletas!: { bicicletaNome: string, bicicletaImagem: string, bicicletaPreco: string, link:string, }[];
 
   constructor(private router: Router) { }
 
-  goToBicicleta(bicicleta: any) {
-    this.router.navigate(['/bicicletas', bicicleta.id])
+  goToBicicleta(link: any) {
+    this.router.navigate([link])
   }
 
 }

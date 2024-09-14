@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
-import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 
 @Component({
   selector: 'app-bicicleta-nebula',
@@ -97,14 +97,16 @@ export class BicicletaNebulaComponent {
 
   bicicletasLista = [
     {
-      id: 2,
+      id:2,
+      link: 'bicicletas/bicicleta-magic',
       bicicletaNome: 'Magic Might',
       bicicletaImagem: 'assets/img/bicicletas/magic.jpg',
       bicicletaPreco: 'R$ 2499',
       bicicletaAlt: 'bicicletas preta',
     },
     {
-      id: 1,
+      id:1,
+      link: 'bicicletas/bicicleta-nimbus',
       bicicletaNome: 'Nimbus Stark',
       bicicletaImagem: 'assets/img/bicicletas/nimbus.jpg',
       bicicletaPreco: 'R$ 4999',
