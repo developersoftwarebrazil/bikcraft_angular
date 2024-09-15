@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
@@ -7,6 +7,7 @@ import { FooterComponent } from '../../../components/shared/footer/footer.compon
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
 import { BicicletasComponent } from "../bicicletas.component";
+import { Title, Meta } from '@angular/platform-browser';
 
 interface BicicletasInformacoes {
   iconUrl: string,
@@ -33,7 +34,8 @@ interface BicicletasFicha {
   templateUrl: './bicicleta-nimbus.component.html',
   styleUrl: './bicicleta-nimbus.component.scss'
 })
-export class BicicletaNimbusComponent {
+export class BicicletaNimbusComponent implements OnInit{
+
   // imagens bicicletas
   @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
   @Input() altImgText1: string = "bicicleta preta";
@@ -55,6 +57,7 @@ export class BicicletaNimbusComponent {
   @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
   @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
   @Input() buttonRoute3: string = 'bicicletas/bicicleta-nebula';
+
 
 
   bicicletasinformacoes: BicicletasInformacoes[] = [
@@ -124,4 +127,20 @@ export class BicicletaNimbusComponent {
       bicicletaAlt: 'bicicletas cinza',
     }
   ]
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+  ){}
+  ngOnInit(): void {
+    this.titleService.setTitle('Bicicletas | Nimbus-Bikcraft');
+    this.metaService.addTags([
+      { name: 'description', content: 'A Nimbus é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { name: 'keywords', content: 'Bicicletas | Nimbus-Bikcarft' },
+      { property: 'og:title', content: 'Bicicletas' },
+      { property: 'og:desscription', content: 'A Nimbus é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { property: 'og:type', content: 'website' },
+
+    ])
+  }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
@@ -22,7 +23,7 @@ import { PageTitleComponent } from '../../../components/shared/page-title/page-t
   templateUrl: './bicicleta-magic.component.html',
   styleUrl: '../bicicleta-nimbus/bicicleta-nimbus.component.scss'
 })
-export class BicicletaMagicComponent {
+export class BicicletaMagicComponent implements OnInit {
   // imagens bicicletas
   @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
   @Input() altImgText1: string = "bicicleta preta";
@@ -113,5 +114,21 @@ export class BicicletaMagicComponent {
       bicicletaAlt: 'bicicletas preta',
     }
   ]
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+  ) { }
+  ngOnInit(): void {
+    this.titleService.setTitle('Bicicletas | Magic-Bikcraft');
+    this.metaService.addTags([
+      { name: 'description', content: 'A Magic Might é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { name: 'keywords', content: 'Bicicletas | Magic-Bikcarft' },
+      { property: 'og:title', content: 'Bicicletas' },
+      { property: 'og:desscription', content: 'A Magic Might é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { property: 'og:type', content: 'website' },
+
+    ])
+  }
 
 }

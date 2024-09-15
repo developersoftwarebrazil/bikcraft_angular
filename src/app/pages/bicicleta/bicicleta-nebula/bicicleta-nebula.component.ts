@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bicicleta-nebula',
@@ -22,7 +23,7 @@ import { PageTitleComponent } from '../../../components/shared/page-title/page-t
   templateUrl: './bicicleta-nebula.component.html',
   styleUrl: '../bicicleta-nimbus/bicicleta-nimbus.component.scss'
 })
-export class BicicletaNebulaComponent {
+export class BicicletaNebulaComponent implements OnInit{
   // imagens bicicletas
   @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
   @Input() altImgText1: string = "bicicleta preta";
@@ -113,4 +114,20 @@ export class BicicletaNebulaComponent {
       bicicletaAlt: 'bicicletas preta',
     }
   ]
+
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+  ){}
+  ngOnInit(): void {
+    this.titleService.setTitle('Bicicletas | Nebula-Bikcraft');
+    this.metaService.addTags([
+      { name: 'description', content: 'A Nebula Cosmic é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { name: 'keywords', content: 'Bicicletas | Nebula-Bikcarft' },
+      { property: 'og:title', content: 'Bicicletas' },
+      { property: 'og:desscription', content: 'A Nebula Cosmic é a melhor Bikcraaaft já criada pela nossa equipe' },
+      { property: 'og:type', content: 'website' },
+
+    ])
+  }
 }

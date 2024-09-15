@@ -35,8 +35,8 @@ export class SegurosComponent {
       vantagensDescricao: 'Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você.'
     },
     {
-      vantagemIconeUrl: 'assets/img/icones/ondas.svg',
-      vantagensTitulo:'Reparo de Quadro',
+      vantagemIconeUrl: 'assets/img/icones/carbono.svg',
+      vantagensTitulo:'Carbono',
       vantagensDescricao: 'Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar.'
     },
     {
@@ -56,18 +56,5 @@ export class SegurosComponent {
     },
   ];
 
-  constructor(private titleService: Title, private metaService: Meta) { }
-
-  ngOnInit(): void {
-    this.titleService.setTitle('Seguros | Bikcraft');
-    this.metaService.addTags([
-      { name: 'description', content: 'Página de bicicletas feitas artezanalmente.' },
-      { name: 'keywords', content: 'Bicicletas' },
-      { property: 'og:title', content: 'Bicicletas' },
-      { property: 'og:desscription', content: 'Página de bicicletas feitas artezanalmente.' },
-      { property: 'og:type', content: 'website' },
-
-    ])
-  }
 
 }
