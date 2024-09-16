@@ -1,3 +1,25 @@
 <headers></headers>
-<page-title></page-title>
+<main>
+  <page-title [pageTitle]="'Resposta em até 24h'" [pageSubtitle]="'nosso contato'" [titleClass]="'font-2-l-b cor-5'" [subtitleClass]="'font-1-xxl cor-0'" [bgClass]="'titulo-bg'" [containerClass]="'titulo container'">
+  </page-title>
+  <section [ngClass]="sectionClass" [attr.arial-label]="descricaoAriaLabelSection">
+    <h2 class="font-1-m cor-0">Lojas Online</h2>
+    <div class="contato-endereco font-2-m cor-4">
+      <p>{{enderecoRua}}</p>
+      <p>{{enderecoBairro}}</p>
+      <p>{{enderecoCidade}}</p>
+    </div>
+    <address class="contato-meios font-2-s cor-4">
+      <a [href]="'mailto:'+ enderecoEmail"> {{email}}</a>
+      <a [href]="'mailto:'+ enderecoEmailAssistencia"> {{emailAssistencia}}</a>
+      <a [href]="'tel:'+ numeroTelefone"> {{telefone}}</a>
+    </address>
+    <div class="formulatio-redes">
+      <a href="/"><img [src]="imgUrlInstagram" [alt]="instagramAltText"> </a>
+      <a href="/"><img [src]="imgUrlFace" [alt]="faceAltText"> </a>
+      <a href="/"><img [src]="imgUrlYoutube" [alt]="youtubeAltText"> </a>
+    </div>
+  </section>
+  <formulario></formulario>
+</main>
 <footers></footers>

@@ -1,0 +1,32 @@
+<section [ngClass]="sectionClass" [attr.arial-label]="descricaoAriaLabelSection">
+  <form>
+    <div>
+      <label for="name">Nome</label>
+      <input id="name" name="name" formControlName="name" type="text">
+      <div *ngIf="form.controls['name'].invalid && form.controls['name'].touched">
+        <small *ngIf="form.controls['name'].errors?.['required']">Name is required.</small>
+        <small *ngIf="form.controls['name'].errors?.['minlength']">Name must be at least 3 characters long.</small>
+      </div>
+    </div>
+    <label for="email">Email:</label>
+    <input id="email" name="emmail" formControlName="email" type="email" [placeholder]="'exemplo@email.com'">
+    <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
+      <small *ngIf="form.controls['email'].errors?.['required']">Email is required.</small>
+      <small *ngIf="form.controls['email'].errors?.['email']">Invalid email format.</small>
+    </div>
+
+    <label for="phone">Telefone</label>
+    <input id="phone" name="phone" formControlName="phone" type="text" [placeholder]="'+55 (19 )99999-9999'">
+    <div *ngIf="form.controls['phone'].invalid && form.controls['phone'].touched">
+      <small *ngIf="form.controls['phone'].errors?.['required']">Phone reuired </small>
+    </div>
+
+    <label for="message" [ariaPlaceholder]="'O que vocè precisa?'">Mensagem:</label>
+    <textarea id="message" rows="5" formControlName="message" tname="message"></textarea>
+
+    <button-component label="inscreva-se" class="botao" route="buttonRoute"></button-component>
+  </form>
+</section>
+
+
+//
