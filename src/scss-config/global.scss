@@ -1,3 +1,8 @@
+@import "../scss-config/glabal.variables.scss";
+.col-2{
+  grid-column: span 2;
+}
+
 //configurações para o nav
 .nav-menu {
   display: flex;
@@ -105,6 +110,22 @@
 // configurações globais para seguros
 #seguros .seguros {
   padding-top: 0;
+}
+
+//
+//  configurções para o contato
+
+.contato-dados,
+.formulario-contato {
+  padding: $padding-big; //60px
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+
+  //800px
+  @media (max-width: $larger-width) {
+    padding: $padding-bottom-small;//20px
+
+  }
+
 }
 
 //

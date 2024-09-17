@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavComponent } from '../nav/nav.component';
 
 @Component({
@@ -9,7 +9,7 @@ import { NavComponent } from '../nav/nav.component';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent{
+export class FooterComponent {
   @Input() marcaImgUrl: string = "assets/bikcraft.svg";
   @Input() marcarAtlText: string = "marca svg";
   @Input() contatoTitle: string = "Contato";

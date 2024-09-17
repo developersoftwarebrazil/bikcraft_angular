@@ -16,7 +16,7 @@ import { ButtonComponent } from '../button/button.component';
 export class FormularioComponent {
   public descricaoAriaLabelSection: string = 'Descrição da Seção';
 
-  @Input() sectionClass: string = 'formulario';
+  @Input() sectionClass: string = 'formulario-contato';
 
   form: FormGroup;
 
