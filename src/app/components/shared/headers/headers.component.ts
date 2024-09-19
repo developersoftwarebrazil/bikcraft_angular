@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavComponent } from '../nav/nav.component';
 
 interface Styles {
   class: string;
   cor: string;
   font: string;
-
 }
 @Component({
   selector: 'headers',
@@ -18,7 +17,7 @@ interface Styles {
   templateUrl: './headers.component.html',
   styleUrl: './headers.component.scss',
 })
-export class HeadersComponent implements OnInit {
+export class HeadersComponent {
 
   headerLinks = [
     { label: "Bicicletas", url: "/bicicleta" },
@@ -28,9 +27,5 @@ export class HeadersComponent implements OnInit {
 
   @Input() marcaImgUrl: string = "assets/bikcraft.svg";
   @Input() marcarAtlText: string = "marca svg";
-
-
-  constructor() { }
-  ngOnInit(): void { }
 
 }

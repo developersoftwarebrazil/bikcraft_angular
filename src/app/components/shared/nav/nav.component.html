@@ -1,4 +1,4 @@
-<nav [attr.aria-label]="ariaLabel">
+  <nav [attr.aria-label]="ariaLabel">
   <ul [ngClass]="ulClasses">
     <li *ngFor="let item of navItems"[ngClass]="item.classes">
       <a [href]="item.link">{{ item.label }}</a>
