@@ -1,0 +1,66 @@
+@import "../../../../scss-config/glabal.variables.scss";
+
+.lojas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 2.5rem; //0 40px
+  padding-top: $padding-top-extra-big; //120px
+  padding-bottom: $padding-bottom-exra-big; //120px
+
+  h2 {
+    grid-column: 1/-1;
+    margin-bottom: $margin-bottom-big; //60px
+
+    //800px
+    @media (max-width: $larger-width) {
+      margin-bottom: $margin-bottom-large; //32px
+    }
+  }
+  img {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  //800px
+  @media (max-width: $larger-width) {
+    gap: $gap-medium; //20px
+    padding-top: $padding-top-big; //60px
+    padding-bottom: $padding-bottom-big; //60px
+  }
+  //600px
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+.lojas-items {
+  border-radius: 0 0 0.35rem 0.25rem;
+  background: $background-principal-branco-max;
+  box-shadow: $box-shadow-padrao;
+}
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem; //32px 16px
+  padding: $padding-large; //32px
+
+  h3,
+  .lojas-tempo {
+    grid-column: 1/-1;
+  }
+  .lojas-tempo {
+    display: flex;
+    align-items: center;
+    gap: $gap-smallest; //8px
+  }
+  .lojas-dados {
+    border-left: 0.125rem solid var(--cor-2);
+    gap: $gap-smallest; //8px
+    padding-left: $padding-left-smaller;
+  }
+  //800px
+  @media (max-width: $big-width) {
+    grid-template-columns: 1fr;
+  }
+}
+//800px
+@media (max-width: $larger-width) {
+}
+//

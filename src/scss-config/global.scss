@@ -1,5 +1,5 @@
 @import "../scss-config/glabal.variables.scss";
-.col-2{
+.col-2 {
   grid-column: span 2;
 }
 
@@ -118,14 +118,12 @@
 .contato-dados,
 .formulario-contato {
   padding: $padding-big; //60px
-  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  box-shadow:$box-shadow-padrao;
 
   //800px
   @media (max-width: $larger-width) {
-    padding: $padding-bottom-small;//20px
-
+    padding: $padding-bottom-small; //20px
   }
-
 }
 
 //

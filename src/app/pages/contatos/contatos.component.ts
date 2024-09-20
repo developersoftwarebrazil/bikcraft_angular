@@ -5,6 +5,7 @@ import { FormularioComponent } from '../../components/shared/formulario/formular
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/page-title/page-title.component';
 import { ContatoComponent } from '../../components/shared/contato/contato.component';
+import { LojaComponent } from './loja/loja.component';
 
 @Component({
   selector: 'contatos',
@@ -15,6 +16,7 @@ import { ContatoComponent } from '../../components/shared/contato/contato.compon
     PageTitleComponent,
     ContatoComponent,
     FormularioComponent,
+    LojaComponent,
     FooterComponent,
   ],
   templateUrl: './contatos.component.html',

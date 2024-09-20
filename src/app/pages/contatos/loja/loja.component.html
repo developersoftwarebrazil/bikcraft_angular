@@ -1,0 +1,42 @@
+<article class="lojas container">
+
+  <h2 class="font-1-xxl">lojas locais<span class="cor-p-1">.</span></h2>
+  <div class="lojas-items">
+    <img [src]="imagemLojaRjUrl" [alt]="imagemLojaRjAltText">
+    <div class="lojas-conteudo">
+      <h3 class="font-1-xl">Rio de Jameiro</h3>
+      <div class="lojas-dados font-2-s cor-8">
+        <p>{{enderecoRuaRJ}}</p>
+        <p>{{enderecoBairroRJ}}</p>
+        <p>{{enderecoCidadeRJ}}</p>
+      </div>
+
+      <div class="lojas-dados font-2-s cor-8">
+        <a [href]="'mailto:'+ enderecoEmailAssistenciaRJ"> {{emailAssistenciaRJ}}</a>
+        <a [href]="'tel:'+ numeroTelefoneRJ"> {{telefoneRJ}}</a>
+      </div>
+      <p class="lojas-tempo font-1-s"><img [src]="imagemIconeHorarioUrl" [alt]="imagemIconeHorarioAltText">{{horarioFuncionamento}}</p>
+    </div>
+  </div>
+  <div class="lojas-items">
+    <img [src]="imagemLojaSpUrl" [alt]="imagemLojaSpAltText">
+    <div class="lojas-conteudo">
+      <h3 class="font-1-xl">São Paulo</h3>
+
+      <div class="lojas-dados font-2-s cor-8">
+        <p>{{enderecoRuaSP}}</p>
+        <p>{{enderecoBairroSP}}</p>
+        <p>{{enderecoCidadeSP}}</p>
+      </div>
+
+      <div class="lojas-dados font-2-s cor-8">
+        <p><a [href]="'mailto:'+ enderecoEmailAssistenciaSP"> {{emailAssistenciaSP}}</a>
+        </p>
+        <p>
+          <a [href]="'tel:'+ numeroTelefoneSP"> {{telefoneSP}}</a>
+        </p>
+      </div>
+      <p class="lojas-tempo font-1-s"><img [src]="imagemIconeHorarioUrl" [alt]="imagemIconeHorarioAltText">{{horarioFuncionamento}}</p>
+    </div>
+  </div>
+</article>

@@ -2,10 +2,12 @@
 
 #contato {
   background: linear-gradient( var(--cor-11) 37.5rem, var(--cor-1) 0px);
+
 }
 .contato {
   display: grid;
   grid-template-columns: 5fr 7fr;
+
 
   //800pz
   @media (max-width: $larger-width) {
