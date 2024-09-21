@@ -39,8 +39,6 @@ export class BicicletaMagicComponent implements OnInit {
   @Input() altImgIcon2: string = "imagem icone moto de estoque";
 
 
-  @Input() buttonRoute: string = 'bicicletas/orcamento';
-
   // Rotas para os botões de navegação
   @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
   @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';

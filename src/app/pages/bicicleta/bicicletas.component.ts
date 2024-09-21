@@ -115,5 +115,6 @@ export class BicicletasComponent implements OnInit {
   navigateToNebula() {
     this.router.navigate([this.buttonRoute3]);
   }
+  
 
 }

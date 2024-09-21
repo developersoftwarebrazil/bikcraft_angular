@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
-import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-bicicleta-nebula',
+  selector: 'bicicleta-nebula',
   standalone: true,
   imports: [
     CommonModule,
@@ -23,7 +24,7 @@ import { Title, Meta } from '@angular/platform-browser';
   templateUrl: './bicicleta-nebula.component.html',
   styleUrl: '../bicicleta-nimbus/bicicleta-nimbus.component.scss'
 })
-export class BicicletaNebulaComponent implements OnInit{
+export class BicicletaNebulaComponent implements OnInit {
   // imagens bicicletas
   @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
   @Input() altImgText1: string = "bicicleta preta";
@@ -38,8 +39,6 @@ export class BicicletaNebulaComponent implements OnInit{
   @Input() iconUrl2: string = "assets/img/icones/estoque.svg";
   @Input() altImgIcon2: string = "imagem icone moto de estoque";
 
-
-  @Input() buttonRoute: string = 'bicicletas/orcamento';
 
   // Rotas para os botões de navegação
   @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
@@ -98,7 +97,7 @@ export class BicicletaNebulaComponent implements OnInit{
 
   bicicletasLista = [
     {
-      id:2,
+      id: 2,
       link: 'bicicletas/bicicleta-magic',
       bicicletaNome: 'Magic Might',
       bicicletaImagem: 'assets/img/bicicletas/magic.jpg',
@@ -106,7 +105,7 @@ export class BicicletaNebulaComponent implements OnInit{
       bicicletaAlt: 'bicicletas preta',
     },
     {
-      id:1,
+      id: 1,
       link: 'bicicletas/bicicleta-nimbus',
       bicicletaNome: 'Nimbus Stark',
       bicicletaImagem: 'assets/img/bicicletas/nimbus.jpg',
@@ -118,7 +117,8 @@ export class BicicletaNebulaComponent implements OnInit{
   constructor(
     private titleService: Title,
     private metaService: Meta,
-  ){}
+    private router: Router,
+  ) { }
   ngOnInit(): void {
     this.titleService.setTitle('Bicicletas | Nebula-Bikcraft');
     this.metaService.addTags([

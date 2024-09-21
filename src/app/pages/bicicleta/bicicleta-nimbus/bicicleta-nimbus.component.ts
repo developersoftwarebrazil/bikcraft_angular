@@ -50,9 +50,6 @@ export class BicicletaNimbusComponent implements OnInit{
   @Input() iconUrl2: string = "assets/img/icones/estoque.svg";
   @Input() altImgIcon2: string = "imagem icone moto de estoque";
 
-
-  @Input() buttonRoute: string = 'bicicletas/orcamento';
-
   // Rotas para os botões de navegação
   @Input() buttonRoute1: string = 'bicicletas/bicicleta-nimbus';
   @Input() buttonRoute2: string = 'bicicletas/bicicleta-magic';
