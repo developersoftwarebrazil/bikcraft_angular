@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'radio-buttom-component',
@@ -12,14 +12,16 @@ import { EventEmitter } from 'stream';
   styleUrl: './radio-buttom.component.scss'
 })
 export class RadioButtomComponent {
-  @Input() name!:string;
-  @Input() options:{label: string, value: string}[]=[];
-  @Input() selectedValue!:string;
-  @Output() selectedValueChanged: EventEmitter = new EventEmitter();
+  @Input() name!: string;
+  @Input() options: { id: string, label: string, value: string }[] = [];
+  @Input() selectedValue!: string;
+
+  @Output() selectedValueChange: EventEmitter<string> = new EventEmitter<string>();
 
 
-  onSelectedValuChange(value: string){
+  onSelectedValuChange(value: string) {
     this.selectedValue = value;
-    this.selectedValueChanged.emit(this.selectedValue);
+    this.selectedValueChange.emit(this.selectedValue);
+
   }
 }

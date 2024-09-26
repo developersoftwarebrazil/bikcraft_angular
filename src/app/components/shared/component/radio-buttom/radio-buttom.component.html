@@ -1,6 +1,6 @@
-<div *ngFor="let option of optins">
-  <label for="">
-    <input type="radio" [name]="name" [value]="option.value" [checked]="option.value === selectedValue" (change)="onSelectedChange(option.value)" />
+<div *ngFor="let option of options">
+  <label>
+    <input type="radio" [name]="name" [value]="option.value" [checked]="option.value === selectedValue" (change)="onSelectedValuChange(option.value)" />
     {{option.label}}
   </label>
 </div>
