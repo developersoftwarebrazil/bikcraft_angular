@@ -3,8 +3,9 @@ import { Component, Input } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
-import { SeguroComponentsComponent } from '../../../components/shared/seguro-components/seguro-components.component';
+
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
+import { SeguroComponentsComponent } from '../../../components/shared/pages-componens/seguro-components/seguro-components.component';
 
 interface VantagensLista{
   vantagemIconeUrl: string,
