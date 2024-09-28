@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
 
 @Component({
   selector: 'perguntas',

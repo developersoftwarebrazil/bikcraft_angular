@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
 
 @Component({
   selector: 'loja',
@@ -14,10 +14,10 @@ import { PageTitleComponent } from '../../../components/shared/page-title/page-t
 })
 export class LojaComponent {
   @Input() imagemIconeHorarioUrl: string = 'assets/img/icones/horario.svg';
-  @Input() horarioFuncionamento:string ='08-18h de seg à dom;'
+  @Input() horarioFuncionamento: string = '08-18h de seg à dom;'
 
   // RIO DEJANEIRO
-  @Input() imagemIconeHorarioAltText:string='icone de horário svg'
+  @Input() imagemIconeHorarioAltText: string = 'icone de horário svg'
   @Input() imagemLojaRjUrl: string = 'assets/img/lojas/rj.jpg';
   @Input() imagemLojaRjAltText: string = 'mapa marcando o endereço da rua Ali Perto, 474, Rio de Janeiro - RJ ';
 

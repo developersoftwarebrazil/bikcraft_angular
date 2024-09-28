@@ -7,7 +7,7 @@ import { BicicletasListaComponent } from '../../../components/shared/bicicletas-
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
-import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
 
 @Component({
   selector: 'bicicleta-nebula',

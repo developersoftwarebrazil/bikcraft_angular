@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
 import { FooterComponent } from '../../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/headers/headers.component';
-import { PageTitleComponent } from '../../../components/shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
 import { BicicletasComponent } from "../bicicletas.component";
-import { Title, Meta } from '@angular/platform-browser';
 
 interface BicicletasInformacoes {
   iconUrl: string,
@@ -34,7 +34,7 @@ interface BicicletasFicha {
   templateUrl: './bicicleta-nimbus.component.html',
   styleUrl: './bicicleta-nimbus.component.scss'
 })
-export class BicicletaNimbusComponent implements OnInit{
+export class BicicletaNimbusComponent implements OnInit {
 
   // imagens bicicletas
   @Input() nimbus1: string = "assets/img/bicicleta/nimbus1.jpg";
@@ -128,7 +128,7 @@ export class BicicletaNimbusComponent implements OnInit{
   constructor(
     private titleService: Title,
     private metaService: Meta,
-  ){}
+  ) { }
   ngOnInit(): void {
     this.titleService.setTitle('Bicicletas | Nimbus-Bikcraft');
     this.metaService.addTags([

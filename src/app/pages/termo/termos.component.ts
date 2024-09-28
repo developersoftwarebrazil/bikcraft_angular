@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/headers/headers.component';
-import { PageTitleComponent } from '../../components/shared/page-title/page-title.component';
+import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
 
 @Component({
   selector: 'app-termos',
@@ -18,8 +18,8 @@ import { PageTitleComponent } from '../../components/shared/page-title/page-titl
   styleUrl: './termos.component.scss'
 })
 export class TermosComponent implements OnInit {
-  @Input() divTermoClass:string="termos font-2-s cor-10  container";
-  @Input() termoH2Class:string="font-1-l cor-11";
+  @Input() divTermoClass: string = "termos font-2-s cor-10  container";
+  @Input() termoH2Class: string = "font-1-l cor-11";
 
   constructor(private titleService: Title, private metaService: Meta) { }
   ngOnInit(): void {
