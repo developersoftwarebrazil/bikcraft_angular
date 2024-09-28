@@ -13,6 +13,7 @@ import { ButtonComponent } from '../../component/button/button.component';
   styleUrl: './seguro-components.component.scss'
 })
 export class SeguroComponentsComponent {
+
   @Input() titlePrata!: string;
   @Input() precoPrata!: string;
   @Input() periodoPrata!: string;
