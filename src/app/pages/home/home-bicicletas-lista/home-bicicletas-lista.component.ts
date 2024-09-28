@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
+import { BicicletasListaComponent } from '../../../components/shared/pages-componens/bicicletas-lista/bicicletas-lista.component';
 
 @Component({
   selector: 'home-bicicletas-lista',
