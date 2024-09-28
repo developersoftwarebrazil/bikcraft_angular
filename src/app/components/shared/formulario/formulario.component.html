@@ -1,48 +1,32 @@
 <section [ngClass]="sectionClass" [attr.arial-label]="descricaoAriaLabelSection">
-  <form (onSubmit)="onSubmit()" [ngClass]="'form'">
-
-    <!-- campo do nome  -->
-    <div [ngClass]="nomeDivClass" *ngIf="nomePlaceholder">
+  <form class="form">
+    <div>
       <label for="name">Nome</label>
-      <input type="text" id="nome" name="nome" [(ngModel)]="nome" [ngClass]="inputClass" placeholder="{{ nomePlaceholder }}" />
+      <input id="name" name="name" formControlName="name" type="text">
       <div *ngIf="form.controls['name'].invalid && form.controls['name'].touched">
-        <small *ngIf="form.controls['name'].errors?.['required']">Email is required.</small>
-        <small *ngIf="form.controls['name'].errors?.['name']">Invalid name format.</small>
+        <small *ngIf="form.controls['name'].errors?.['required']">Name is required.</small>
+        <small *ngIf="form.controls['name'].errors?.['minlength']">Name must be at least 3 characters long.</small>
       </div>
     </div>
 
-    <!-- campo do sobrenome  -->
-    <div [ngClass]="sobrenome" *ngIf="sobrenomePlaceholder">
-      <label for="surname">Sobrenome</label>
-      <input type="text" id="nome" surname="nome" [(ngModel)]="nome" [ngClass]="inputClass" placeholder="{{ sobrenomePlaceholder }}" />
-      <div *ngIf="form.controls['surname'].invalid && form.controls['surname'].touched">
-        <small *ngIf="form.controls['surname'].errors?.['required']">Email is required.</small>
-        <small *ngIf="form.controls['surname'].errors?.['surname']">Invalid surname format.</small>
-      </div>
-    </div>
-    <!-- campo do telefone  -->
-    <div [ngClass]="telefoneDivClass" *ngIf="telefonePlaceholder">
-      <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" [(ngModel)]="telefone" [ngClass]="inputClass" placeholder="{{ telefonePlaceholder }}" />
+    <div>
+      <label for="phone">Telefone</label>
+      <input id="phone" name="phone" formControlName="phone" type="text" [placeholder]="'+55 (19 )99999-9999'">
       <div *ngIf="form.controls['phone'].invalid && form.controls['phone'].touched">
         <small *ngIf="form.controls['phone'].errors?.['required']">Phone reuired </small>
       </div>
     </div>
-
-    <!-- campo pára email  -->
-    <div [ngClass]="emailDivClass" *ngIf="emailPlaceholder">
+    <div class="col-2">
       <label for="email">Email:</label>
-      <input id="email" name="email" formControlName="email" type="email" [placeholder]="emailPlaceholder">
+      <input id="email" name="emmail" formControlName="email" type="email" [placeholder]="'exemplo@email.com'">
       <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
         <small *ngIf="form.controls['email'].errors?.['required']">Email is required.</small>
         <small *ngIf="form.controls['email'].errors?.['email']">Invalid email format.</small>
       </div>
     </div>
-
-    <!-- campo para a mensagem  -->
-    <div [ngClass]="messageDivClass" *ngIf="messagePlaceholder">
-      <label for="message">Mensagem:</label>
-      <textarea id="message" rows="5" formControlName="message" name="message" [placeholder]="messagePlaceholder"></textarea>
+    <div class="col-2">
+      <label for="message" [ariaPlaceholder]="'O que vocè precisa?'">Mensagem:</label>
+      <textarea id="message" rows="5" formControlName="message" tname="message"></textarea>
     </div>
 
     <button-component label="Enviar mensagem" class="col-2" route="buttonRoute"></button-component>
