@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { NavComponent } from '../../nav/nav.component';
+import { NavComponent } from '../nav/nav.component';
 
 interface Styles {
   class: string;
