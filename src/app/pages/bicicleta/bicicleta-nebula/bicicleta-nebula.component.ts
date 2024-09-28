@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
+
 import { ButtonComponent } from '../../../components/shared/component/button/button.component';
 import { BicicletasListaComponent } from '../../../components/shared/pages-componens/bicicletas-lista/bicicletas-lista.component';
 
 import { FooterComponent } from '../../../components/shared/pages-componens/footer/footer.component';
 import { HeadersComponent } from '../../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
+import { BicicletaSeguroComponent } from '../../../components/shared/pages-componens/bicicleta-seguro/bicicleta-seguro.component';
 
 @Component({
   selector: 'bicicleta-nebula',
