@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
-import { HeadersComponent } from '../../components/shared/headers/headers.component';
+import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { HomeBicicletasListaComponent } from './home-bicicletas-lista/home-bicicletas-lista.component';
 import { HomeDepoimentosComponent } from './home-depoimentos/depoimentos.component';
 import { HomeMainComponent } from './home-main/home-main.component';
-import { HomeTecnologiasComponent } from './home-tecnologias/home-tecnologias.component';
 import { HomeParceirosComponent } from './home-parceiros/home-parceiros.component';
 import { HomeSegurosComponent } from './home-seguros/home-seguros.component';
+import { HomeTecnologiasComponent } from './home-tecnologias/home-tecnologias.component';
 
 @Component({
   selector: 'home',
