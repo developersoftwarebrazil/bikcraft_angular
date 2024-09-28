@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { ContatoComponent } from '../../components/shared/contato/contato.component';
+import { ContatoComponent } from '../../components/shared/pages-componens/contato/contato.component';
 import { FormularioComponent } from '../../components/shared/formulario/formulario.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
