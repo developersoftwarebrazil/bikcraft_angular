@@ -1,4 +1,4 @@
-@import "../../../../scss-config/glabal.variables.scss";
+@import "../../../../../scss-config/glabal.variables.scss";
 .seguros-bg {
   background: var(--cor-11);
   background: $background-principal-preto-med;
@@ -51,7 +51,7 @@
     content: "";
     width: 0.8125rem; //13px
     height: 0.5625rem; //9px
-    background-image: url("../../../../assets/img/icones/lista.svg");
+    background-image: url("../../../../../assets/img/icones/lista.svg");
     position: absolute;
     left: -1.3125rem; //21px
   }

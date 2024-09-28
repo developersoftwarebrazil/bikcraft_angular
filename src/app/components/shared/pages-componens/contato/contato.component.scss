@@ -1,4 +1,4 @@
-@import "../.././../../scss-config/glabal.variables.scss";
+@import "../../../../../scss-config/glabal.variables.scss";
 
 .contato-dados {
   background: $background-principal-preto-max;
@@ -19,7 +19,7 @@
 .contato-endereco {
   margin-bottom: $margin-bottom-large; //32px
   padding-left: 1.75rem; //28px
-  background: url("../../../../assets/img/icones/local.svg") no-repeat 0
+  background: url("../../../../../assets/img/icones/local.svg") no-repeat 0
     0.125rem; //0 2px
 
   p {
@@ -37,14 +37,14 @@
     color: $background-principal-branco-max;
   }
   a:first-child {
-    background: url("../../../../assets/img/icones/email.svg") no-repeat 0
+    background: url("../../../../../assets/img/icones/email.svg") no-repeat 0
       0.125rem; //0 2px
   }
   a:nth-child(2) {
     margin-bottom: $margin-bottom-large; //32px
   }
   a:nth-child(3) {
-    background: url("../../../../assets/img/icones/telefone.svg") no-repeat 0
+    background: url("../../../../../assets/img/icones/telefone.svg") no-repeat 0
       0.125rem; //0 2px
     margin-bottom: $margin-bottom-big; //60px
   }
