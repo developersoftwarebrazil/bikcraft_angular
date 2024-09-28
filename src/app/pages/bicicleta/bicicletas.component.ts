@@ -5,8 +5,8 @@ import { Router } from '@angular/router';
 import { ButtonComponent } from '../../components/shared/button/button.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
-import { FooterComponent } from './../../components/shared/footer/footer.component';
 import { BicicletaNebulaComponent } from './bicicleta-nebula/bicicleta-nebula.component';
+import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 
 
 @Component({

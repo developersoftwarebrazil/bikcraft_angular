@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
 import { PerguntasComponent } from './perguntas/perguntas.component';
 import { SegurosComponent } from './seguros/seguros.component';
+import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 
 @Component({
   selector: 'seguro',

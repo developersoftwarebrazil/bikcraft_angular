@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ContatoComponent } from '../../components/shared/contato/contato.component';
-import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { FormularioComponent } from '../../components/shared/formulario/formulario.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
 import { LojaComponent } from './loja/loja.component';
+import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 
 @Component({
   selector: 'contatos',

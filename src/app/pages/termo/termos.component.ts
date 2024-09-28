@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
+import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 
 @Component({
   selector: 'app-termos',

@@ -5,9 +5,10 @@ import { Router } from '@angular/router';
 import { BicicletaSeguroComponent } from '../../../components/shared/bicicleta-seguro/bicicleta-seguro.component';
 import { BicicletasListaComponent } from '../../../components/shared/bicicletas-lista/bicicletas-lista.component';
 import { ButtonComponent } from '../../../components/shared/button/button.component';
-import { FooterComponent } from '../../../components/shared/footer/footer.component';
+
 import { HeadersComponent } from '../../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
+import { FooterComponent } from '../../../components/shared/pages-componens/footer/footer.component';
 
 @Component({
   selector: 'bicicleta-nebula',
