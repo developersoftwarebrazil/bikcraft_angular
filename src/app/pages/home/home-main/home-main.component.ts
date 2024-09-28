@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../../../components/shared/button/button.component';
+import { ButtonComponent } from '../../../components/shared/component/button/button.component';
 
 
 @Component({

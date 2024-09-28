@@ -2,11 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { ButtonComponent } from '../../components/shared/button/button.component';
+import { ButtonComponent } from '../../components/shared/component/button/button.component';
+import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 import { HeadersComponent } from '../../components/shared/pages-componens/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/pages-componens/page-title/page-title.component';
 import { BicicletaNebulaComponent } from './bicicleta-nebula/bicicleta-nebula.component';
-import { FooterComponent } from '../../components/shared/pages-componens/footer/footer.component';
 
 
 @Component({
