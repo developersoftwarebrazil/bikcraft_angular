@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { SeguroComponentsComponent } from "../../../components/shared/pages-componens/seguro-components/seguro-components.component";
+import { SeguroComponentsComponent } from "../../../components/shared/page-component/seguro-components/seguro-components.component";
 
 @Component({
   selector: 'home-seguros',

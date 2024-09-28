@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { PageTitleComponent } from '../../../components/shared/pages-componens/page-title/page-title.component';
+import { PageTitleComponent } from '../../../components/shared/page-component/page-title/page-title.component';
+import { SeguroComponentsComponent } from '../../../components/shared/page-component/seguro-components/seguro-components.component';
 
-import { SeguroComponentsComponent } from '../../../components/shared/pages-componens/seguro-components/seguro-components.component';
 
 interface VantagensLista {
   vantagemIconeUrl: string,
