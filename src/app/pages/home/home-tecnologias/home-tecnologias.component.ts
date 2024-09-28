@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { LinksComponent } from "../../../components/shared/links/links.component";
+import { LinksComponent } from "../../../components/shared/pages-componens/links/links.component";
 
 
 interface Tecnologia {
