@@ -1,1 +1,31 @@
-<p>orcamento works!</p>
+<headers></headers>
+
+<main id="orcamento">
+  <page-title [pageTitle]="'Cotações em seu email'" [pageSubtitle]="'solicite um orçamento'" [titleClass]="'font-2-l-b cor-5'" [subtitleClass]="'font-1-xxl cor-0'" [bgClass]="'titulo-bg'" [containerClass]="'titulo container'"></page-title>
+
+  <form [ngClass]="'orcamento container'">
+    <div class="orcamento-produto">
+      <h2 class="font-1-xs cor-5">Bikcraft ou Seguros?</h2>
+
+      <radio-buttom-component [options]="radioOptionsOrcamento" [selectedValue]="selectedOption" [name]="'tipo'" (selectedValueChange)="onRadioSelectionChange($event)"></radio-buttom-component>
+
+      <div [ngClass]="{'orcamento-conteudo': true, 'selected': selectedOption === 'bicraft', 'hidden': selectedOption !== 'bicraft'}" id="orcamento-bikcraft">
+        <h2 [ngClass]="'font-1-xs cor-5'">Escolha a sua</h2>
+
+        <radio-buttom-component [options]="radioOptionsBike" [selectedValue]="selectedOption" [name]="'produto'" (selectedValueChange)="onRadioSelectionChange($event)"></radio-buttom-component>
+
+      </div>
+
+      <div [ngClass]="{'orcamento-conteudo': true, 'selected': selectedOption === 'seguros', 'hidden': selectedOption !== 'seguros'}" id="orcamento-seguro">
+        <h2 [ngClass]="'font-1-xs cor-5'">Escolha o plano</h2>
+
+        <radio-buttom-component [options]="radioOpitionsSeguro" [name]="'produto'" (selectedValueChange)="onRadioSelectionChange($event)"></radio-buttom-component>
+      </div>
+    </div>
+
+    <div class="{orcamento-dados form}">
+      <formulario-component [ngClass]="'form-fields'" [formFields]="fieldFomsPersonal"></formulario-component>
+    </div>
+  </form>
+</main>
+<footers></footers>

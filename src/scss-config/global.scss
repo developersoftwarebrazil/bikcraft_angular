@@ -118,7 +118,7 @@
 .contato-dados,
 .formulario-contato {
   padding: $padding-big; //60px
-  box-shadow:$box-shadow-padrao;
+  box-shadow: $box-shadow-padrao;
 
   //800px
   @media (max-width: $larger-width) {
@@ -127,3 +127,6 @@
 }
 
 //
+radio-buttom-component {
+  display: flex;
+}

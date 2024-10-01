@@ -10,6 +10,7 @@ import { SeguroComponent } from './pages/seguro/seguro.component';
 import { TermosComponent } from './pages/termo/termos.component';
 import { ContatosComponent } from './pages/contatos/contatos.component';
 import { OrcamentoComponent } from './pages/orcamento/orcamento.component';
+import { OrcamentosComponent } from './pages/orcamentos/orcamentos.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,7 +19,7 @@ export const routes: Routes = [
   { path: 'contato', component: ContatosComponent },
   { path: 'termos', component: TermosComponent },  // Adicione a rota para Termos
   { path: 'seguros', component: SeguroComponent },
-  { path: 'orcamento', component: OrcamentoComponent },
+  { path: 'orcamentos', component: OrcamentosComponent },
   { path: 'bicicletas', component: BicicletasComponent },
 
 
