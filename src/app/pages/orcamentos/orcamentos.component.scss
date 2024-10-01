@@ -1,0 +1,41 @@
+@import "../../../scss-config/glabal.variables.scss";
+
+#orcamento {
+  background: $background-gradient-horizontal;
+}
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: $padding-bottom-exra-big; //120px
+}
+.orcamento-produto,
+.orcamento-dados {
+  padding: $padding-big; //60px
+  box-shadow: $box-shadow-padrao;
+}
+
+.orcamento-produto {
+  background: $background-principal-preto-max;
+  border-radius: 0.25rem 0 0 0.25rem;
+
+  label {
+    background: #222;
+  }
+}
+.orcamento-dados {
+  background: $background-principal-branco-max;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+.orcamento-conteudo {
+  padding: $padding-medium; //20px
+  background: #222;
+  margin: 20px 0;
+  display: none;
+}
+
+#bikcraft:checked ~ #orcamanto-bikcraft,
+#seguro:checked ~ #orcamanto-seguro {
+  display: block;
+}
+
+//

@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { HeadersComponent } from '../../components/shared/page-component/headers/headers.component';
-import { PageTitleComponent } from '../../components/shared/page-component/page-title/page-title.component';
 import { FooterComponent } from '../../components/shared/page-component/footer/footer.component';
 import { FormularioComponent } from '../../components/shared/page-component/formulario/formulario.component';
+import { HeadersComponent } from '../../components/shared/page-component/headers/headers.component';
+import { PageTitleComponent } from '../../components/shared/page-component/page-title/page-title.component';
+import { ButtonComponent } from '../../components/shared/component/button/button.component';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { FormularioComponent } from '../../components/shared/page-component/form
     HeadersComponent,
     PageTitleComponent,
     FormularioComponent,
+    ButtonComponent,
     FooterComponent
   ],
   templateUrl: './orcamentos.component.html',

@@ -18,6 +18,10 @@ $background-gradient: linear-gradient(
   var(--cor-0) 30%,
   var(--cor-11) 0%
 );
+$background-gradient-horizontal: linear-gradient(
+  var(--cor-11) 37.5rem,
+  var(--cor-1) 0
+);
 
 // box-shadows
 $box-shadow-padrao: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1); //0 1px 2px
