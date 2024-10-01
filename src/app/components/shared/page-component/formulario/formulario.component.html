@@ -1,1 +1,45 @@
+<section [ngClass]="sectionClass" [attr.aria-label]="descricaoAriaLabelSection">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="'form'">
 
+    <!-- Iteração dos campos -->
+    <div *ngFor="let field of formFields" [ngClass]="field.divClass">
+
+      <!-- Título como H2 fora de qualquer div -->
+      <h2 *ngIf="field.title" [ngClass]="field.divClass">{{ field.title }}</h2>
+
+      <!-- Campo de entrada (não envolvido por div se for título) -->
+      <ng-container *ngIf="!field.title">
+        <label [for]="field.name">{{ field.label }}</label>
+
+        <!-- Tipo de entrada baseado no tipo definido no input -->
+        <input *ngIf="field.type !== 'textarea'" [type]="field.type" [id]="field.name" [formControlName]="field.name" [placeholder]="field.placeholder">
+
+        <!-- Textarea -->
+        <textarea *ngIf="field.type === 'textarea'" [id]="field.name" [rows]="field.rows || 5" [formControlName]="field.name" [placeholder]="field.placeholder" [ngClass]="field.inputClass"></textarea>
+
+        <!-- Exibir erro se o campo for obrigatório -->
+        <div *ngIf="form.controls[field.name].invalid && form.controls[field.name].touched">
+          <small *ngIf="form.controls[field.name].errors?.['required']">{{ field.label }} é obrigatório.</small>
+        </div>
+      </ng-container>
+
+    </div>
+  
+  </form>
+</section>
+
+
+<!-- <section [ngClass]="sectionClass" [attr.aria-lable]="descricaoAriaLabelSection">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="form">
+    <div *ngFor="let field of formFields" [ngClass]="">
+
+
+
+      <div *ngIf="form.controls[field.name].invalid && form.controls[field.name].touched">
+        <small *ngIf="form.controls[field.name].errors?.['required']">{{ field.label }} is required.</small>
+        <small *ngIf="field.type === 'email' && form.controls[field.name].errors?.['email']">Invalid email format.</small>
+      </div>
+    </div>
+
+  </form>
+</section> -->

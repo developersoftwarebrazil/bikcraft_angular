@@ -1,0 +1,70 @@
+@import "../../../../../scss-config/glabal.variables.scss";
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap-medium; //20px
+
+  label {
+    display: block;
+    font: 600 1rem/1.5 "Poppins" m sans-serif;
+    margin-bottom: $margin-bottom-smallest; //4px
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: $background-principal-cinza-claro;
+    border: 0.0625rem solid var(--cor-2);
+    border-right: $border-radius-padrao; //4px
+    padding: $padding-smaller; //12px
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--cor-p1);
+    box-shadow: 0 0 0 0.125rem #fea;
+  }
+
+  //600px
+  @media (max-width: $medium-width) {
+    grid-template-columns: 1fr;
+    .col-2 {
+      grid-column: span 1;
+    }
+  }
+}
+
+.form-fields {
+  background: $background-principal-branco-max;
+  border-radius: 0 0.25rem 0.25rem 0; //4px 0 0 4px
+  height: 100%;
+  box-sizing: border-box;
+  h2 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+  h2::before {
+    display: inline-block;
+    content: "";
+    width: 0.25rem; //4px
+    height: 0.5rem; //8px
+    background: var(--cor-p1);
+    left: -0.75rem; //12px
+    position: absolute;
+  }
+  //800px
+  @media (max-width: $larger-width) {
+    border-radius: 0 0 0.25rem 0.25rem; //4px 4px
+  }
+}
+
+//
