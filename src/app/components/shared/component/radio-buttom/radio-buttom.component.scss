@@ -1,15 +1,24 @@
-.radio-btn{
+@import '../../../../../scss-config/glabal.variables.scss';
+.radio-btn {
   display: flex;
   margin-left: 10px;
   box-sizing: border-box;
 }
 
 label {
-  display: inline-block;
-  background: red;
-
-  padding: 1rem .5rem;
-  gap: 10px;
+  display: block;
+  font: 400 1rem/1.5 "s", sans-serif;
+  color: var(--cor-4);
+  background: var(--cor-10);
+  padding: 0.75rem 1rem; //12px 16rem
+  border-radius: $border-radius-padrao;
 }
 
-
+#bikcraft:checked + label {
+  background: var(--cor-0);
+  color: var(--cor-11);
+}
+#seguros:checked + label {
+  background: var(--cor-0);
+  color: var(--cor-11);
+}

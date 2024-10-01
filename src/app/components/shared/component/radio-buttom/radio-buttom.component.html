@@ -1,22 +1,9 @@
-<!-- <div *ngFor="let option of options; let i = index">
-  <label>
-    <input type="radio" [id]="'idRadio' + i" [name]="name" [value]="option.value" [checked]="option.value === selectedValue"
-           (change)="onSelectedValueChange(option.value)" />
-    {{ option.label }}
-  </label>
-</div> -->
 <div *ngFor="let option of options">
   <!-- Definir o id do input como uma string única usando a opção e o índice -->
-  <input type="radio" [id]="option.id" [name]="name" [value]="option.value"
-  [checked]="option.value === selectedValue"
-  (change)="onSelectedValueChange(option.value)" />
-<label [for]="option.id">{{ option.label }}</label>
+  <input type="radio" [id]="option.id" [name]="name" [value]="option.value" [checked]="option.value === selectedValue" (change)="onSelectedValueChange(option.value)" />
+  <label [for]="option.id">
+    {{ option.label }}
+    <span *ngIf="option.hasSpan">{{option.spanText}}</span>
+  </label>
 </div>
 
-
-<!-- <div *ngFor="let option of options">
-  <label>
-    <input type="radio" [name]="name" [value]="option.value" [checked]="option.value === selectedValue" (change)="onSelectedValuChange(option.value)" />
-    {{option.label}}
-  </label>
-</div> -->

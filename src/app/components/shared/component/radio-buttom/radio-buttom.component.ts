@@ -12,14 +12,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './radio-buttom.component.scss'
 })
 export class RadioButtomComponent {
-  @Input() options: {id:string ,value: string, label: string }[] = [];
-  @Input() selectedValue: string = '';
+  @Input() options: { id: string, value: string, label: string, hasSpan?: boolean, spanText?: string }[] = [];
+  
+  @Input() selectedValue!: string;
   @Input() name: string = '';
+  @Input() spanText!: string;
 
   @Output() selectedValueChange = new EventEmitter<string>();
 
   onSelectedValueChange(value: string) {
     this.selectedValue = value;
-    this.selectedValueChange.emit(value);
+
+    return this.selectedValueChange.emit(this.selectedValue);
+
   }
 }
