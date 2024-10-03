@@ -23,9 +23,7 @@
   background: $background-principal-preto-max;
   border-radius: 0.25rem 0 0 0.25rem;
 }
-.orcamento-produto > * {
-  grid-column: 1/-1;
-}
+
 
 .orcamento-dados {
   background: $background-principal-branco-max;
@@ -37,7 +35,6 @@
 
 .selected {
   color: var(--cor-4);
-  background: var(--cor-10);
   background: var(--cor-10);
 
   /* Outros estilos que você deseja adicionar quando a opção estiver selecionada */

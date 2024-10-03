@@ -1,5 +1,5 @@
 <section [ngClass]="sectionClass" [attr.aria-label]="descricaoAriaLabelSection">
-  <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="'form'">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="'form orcamento-dados'">
 
     <!-- Iteração dos campos -->
     <div *ngFor="let field of formFields" [ngClass]="field.divClass">
@@ -24,7 +24,7 @@
       </ng-container>
 
     </div>
-  
+
   </form>
 </section>
 

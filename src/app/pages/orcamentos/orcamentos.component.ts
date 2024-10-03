@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../../components/shared/component/button/button.component';
 import { FooterComponent } from '../../components/shared/page-component/footer/footer.component';
 import { FormularioComponent } from '../../components/shared/page-component/formulario/formulario.component';
 import { HeadersComponent } from '../../components/shared/page-component/headers/headers.component';
 import { PageTitleComponent } from '../../components/shared/page-component/page-title/page-title.component';
-import { ButtonComponent } from '../../components/shared/component/button/button.component';
 
 
 @Component({
@@ -23,8 +23,9 @@ import { ButtonComponent } from '../../components/shared/component/button/button
 })
 export class OrcamentosComponent {
 
-  fieldFomsPersonal = [    // Seção de Dados Pessoais
-    { title: 'dados pessoais', divClass: 'font-1-xs cor-9 col-2' },
+  fieldFomsPersonal = [
+    // Seção de Dados Pessoais
+    { title: 'dados pessoais', divClass: 'title-h2 font-1-xs cor-9 col-2' },
 
     { name: 'nome', label: 'Nome', type: 'text', placeholder: 'Digite seu nome', required: true },
     { name: 'sobrenome', label: 'Sobrenome', type: 'text', placeholder: 'Digite seu sobrenome', required: true },
@@ -32,7 +33,7 @@ export class OrcamentosComponent {
     { name: 'email', label: 'Email', type: 'email', placeholder: 'Digite seu email', required: true, divClass: 'col-2' },
 
     // Seção de Entrega
-    { title: 'entrega', divClass: 'font-1-xs cor-9 col-2' },
+    { title: 'entrega', divClass: 'title-h2 font-1-xs cor-9 col-2' },
 
     { name: 'cep', label: 'CEP', type: 'text', placeholder: 'Digite seu CEP', required: true },
     { name: 'numero', label: 'Número', type: 'text', placeholder: 'Digite o número', required: true },

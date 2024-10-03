@@ -2,8 +2,10 @@
 // ecuro
 $background-principal-preto-max: var(--cor-12);
 $background-principal-preto-med: var(--cor-11);
+$background-principal-preto-claro: var(--cor-10);
 
 //cinza
+$background-principal-cinza-escuro: var(--cor-9);
 $background-principal-cinza-claro: var(--cor-1);
 
 //claro
@@ -19,8 +21,7 @@ $background-gradient: linear-gradient(
   var(--cor-11) 0%
 );
 $background-gradient-horizontal: linear-gradient(
-  var(--cor-11) 37.5rem,
-  var(--cor-1) 0
+  var(--cor-11) 37.5rem, var(--cor-1) 0
 );
 
 // box-shadows
