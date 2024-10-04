@@ -97,6 +97,10 @@
     box-shadow: inset 0 0 0 0.1875rem var(--cor-0),
       inset 0 0 0 0.5rem var(--cor-7);
   }
+
+  input[type="radio"]:checked + label + .orcamento-detalhes {
+    display: grid;
+  }
 }
 
 .orcamento-dados {
@@ -104,9 +108,6 @@
   border-radius: 0 0.25rem 0.25rem 0;
 }
 .orcamento-conteudo {
-  padding: $padding-medium; //20px
-  background: #222;
-  margin: 20px 0;
   display: none;
 
   h2 {
@@ -118,6 +119,24 @@
 #seguro:checked ~ #orcamanto-seguro {
   display: grid;
   gap: $gap-medium; //20px
+}
+.orcamento-detalhes {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  background: $background-principal-branco-max;
+  padding: $padding-medium; //20px
+  align-items: center;
+  border-radius: $border-radius-padrao;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: $margin-bottom-smallest; //8px
+  }
+  li img {
+    width: 1rem; //8px
+    margin-right: $margin-right-smallest; //8px
+  }
 }
 
 //
