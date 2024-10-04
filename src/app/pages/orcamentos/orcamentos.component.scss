@@ -23,11 +23,21 @@
     position: absolute;
     background-color: $background-principal-amarelo-max;
   }
+
+  //800px
+  @media (max-width: $larger-width) {
+    grid-template-columns: 1fr;
+  }
 }
 .orcamento-produto,
 .orcamento-dados {
   padding: $padding-big; //60px
   box-shadow: $box-shadow-padrao;
+
+  //1200px
+  @media (max-width: $big-width) {
+    padding: $padding-large; //32px
+  }
 }
 
 .orcamento-produto {
@@ -101,11 +111,26 @@
   input[type="radio"]:checked + label + .orcamento-detalhes {
     display: grid;
   }
+
+  //800px
+  @media (max-width: $larger-width) {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+
+    //400px
+    @media (max-width: $min-width) {
+      grid-template-columns: 1fr;
+    }
 }
 
 .orcamento-dados {
   background: $background-principal-branco-max;
   border-radius: 0 0.25rem 0.25rem 0;
+
+  //800px
+  @media (max-width: $larger-width) {
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
 }
 .orcamento-conteudo {
   display: none;
